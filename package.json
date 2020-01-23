@@ -1,0 +1,15 @@
+{
+  "name": "solo-tut",
+  "version": "1.0.0",
+  "description": "Express is a light weight web framework used to make building web servers easier.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
