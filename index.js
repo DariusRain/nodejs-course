@@ -27,6 +27,11 @@ index.get('/api/routes', (req, res) => {
 
 //Listen to a port with the .listen() method from express
 const port = process.env.PORT || 3000;
+    //'process' is an object that holds another object 'env' which is the enviroment object. Then any variable name you set as the enviroment vairable can 
+    //be accessed. In this case 'PORT'
+
+
+
 //The purpose of this is so that your server is watching that port for incoming requests and it also uses it to make responses back as well.
 //It is sort of like how you need a phone in order for you to contact others and others to contact you otherwise you will be knocking on people's door.
 index.listen(port, () => {

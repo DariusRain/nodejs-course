@@ -1,11 +1,11 @@
-# Darius Rain - Mash Rest API Tutorial 
+# Darius Rain - Node.js Course with [_Mash_](https://www.youtube.com/user/programmingwithmosh) 
 ## Section 4. Building RESTful API_s Using Express
 
 Express is a light weight web framework used to make building web servers easier.
 
  REST deﬁnes a set of conventions for creating HTTP services.
 
-0. Commands: 
+### 0). Commands: 
     //git init     
         ~Initializes a git repository
     
@@ -32,27 +32,31 @@ Express is a light weight web framework used to make building web servers easier
         ~Just like git init this command initializes instead of '.git' but package.json and sometimes package-lock.json
         ~This is a JSON file which is for humans and computers to understand what your application is and needs.
         ~You will find oput that JSON (Javascript Object Notation) is used to translate a lot of data to other technologies and frameworks.
-         
+        ~This package shows all the dependcies of your application
+        ~NOTE: You need to do this becuase if you try to install something with:
+            **Command: npm i <package-name> 
 
     //I put this as step zero becuse this should be something I allready should know. (💪MUSCLE MEMORY!)
 
 
-1. Command: npm i express
+### 1). Command: npm i express
     //This installs express which is a lightweight framework for building a server.
     //This dependency will be added to 
 
-2. Code: Set up express server and routes for your application. 
-// See file: index.js for the comments describing the process.
+### 2). Code: Set up express server and routes for your application. 
+    // See file: index.js for the comments describing the process.
 
 
-3. Command: npm i -g nodemon 
+### 3). Command: npm i -g nodemon 
     //Installs nodemon globally for any project you may use it.
     //nodemon is a tool used for development purposes not for production. The purpose of it is that it reloads the server
     //when a file is being changed so it is constantly watching for changes. 
 
 
-4. Code: Add process.env to the port vairable in 'index.js'
-    //
+### 4). Code: Add process.env to the port vairable in 'index.js'
+    //See file: 'index.js' explaination in comments.
+
+### 5). Command: 
 
 
 
