@@ -1,10 +1,6 @@
 # Darius Rain - Node.js Course with [_Mash_](https://www.youtube.com/user/programmingwithmosh) 
 ## Section 4. Building RESTful API_s Using Express
-
-Express is a light weight web framework used to make building web servers easier.
-
- REST deﬁnes a set of conventions for creating HTTP services.
-
+&nbsp;
 ### 0). Commands: 
     //git init     
         ~Initializes a git repository
@@ -38,25 +34,34 @@ Express is a light weight web framework used to make building web servers easier
 
     //I put this as step zero becuse this should be something I allready should know. (💪MUSCLE MEMORY!)
 
-
+&nbsp;
 ### 1). Command: npm i express
     //This installs express which is a lightweight framework for building a server.
-    //This dependency will be added to 
+    //This dependency will be shown in the 'package.json' file.
+&nbsp;
 
 ### 2). Code: Set up express server and routes for your application. 
     // See file: index.js for the comments describing the process.
 
+&nbsp;
 
 ### 3). Command: npm i -g nodemon 
     //Installs nodemon globally for any project you may use it.
     //nodemon is a tool used for development purposes not for production. The purpose of it is that it reloads the server
     //when a file is being changed so it is constantly watching for changes. 
+&nbsp;
 
 
 ### 4). Code: Add process.env to the port vairable in 'index.js'
     //See file: 'index.js' explaination in comments.
+&nbsp;
 
-### 5). Command: 
+### 5). Command: export PORT=5000
+    //Windows (CMD ~ Windows Command Prompt): 
+        **Command: set <variable-name> = <value> 
+    //Mac & Git Bash (Both are Bash terminals):
+        **Command: exports <variable-name> = <value>
+&nbsp;
 
 
 
