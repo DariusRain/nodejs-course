@@ -1,7 +1,8 @@
 # Darius Rain - Node.js Course with [_Mash_](https://www.youtube.com/user/programmingwithmosh) 
 ## Section 4. Building RESTful API_s Using Express
 &nbsp;
-### 0). Commands: 
+### 0) Initialize and configure git repository and npm package.json
+Commands: 
     //git init     
         ~Initializes a git repository
     
@@ -35,35 +36,66 @@
     //I put this as step zero becuse this should be something I allready should know. (💪MUSCLE MEMORY!)
 
 &nbsp;
-### 1). Command: npm i express
+### 1) Install npm package 'express'.
+Command: npm i express
+    &nbsp;
     //This installs express which is a lightweight framework for building a server.
     //This dependency will be shown in the 'package.json' file.
 &nbsp;
 
-### 2). Code: Set up express server and routes for your application. 
-    // See file: index.js for the comments describing the process.
+### 2) Configure express server in 'index.js' file. 
+
+Code: 
+&nbsp;
+
+     // Set up express server and routes for your application. 
+    //See comments in [_index.js_](https://github.com/DariusRain/nodejs-course/blob/4-2-create-server-routes-14-45/index.js)
 
 &nbsp;
 
-### 3). Command: npm i -g nodemon 
+### 3) Install npm packge 'nodemon' (A dev dependency)
+Command: npm i nodemon -D
+    &nbsp;
     //Installs nodemon globally for any project you may use it.
-    //nodemon is a tool used for development purposes not for production. The purpose of it is that it reloads the server
-    //when a file is being changed so it is constantly watching for changes. 
+    //nodemon is a tool used for development purposes not for production. The purpose of it is -
+    //that it reloads the server when a file is being changed so it is - 
+    //constantly watching for changes. 
 &nbsp;
 
 
-### 4). Code: Add process.env to the port vairable in 'index.js'
-    //See file: 'index.js' explaination in comments.
+### 4) Add 'process.env.PORT' as a port variable.  
+Code:
+&nbsp;
+    //Add process.env to the port vairable in 'index.js'
+    //See comments in [_index.js_](https://github.com/DariusRain/nodejs-course/blob/4-4-add-code-for-enviroment-varible-18-46/index.js)
+
 &nbsp;
 
-### 5). Command: export PORT=5000
+### 5) Set enviromnent variable in terminal.
+
+Command: export PORT=5000
+&nbsp;
     //Windows (CMD ~ Windows Command Prompt): 
         **Command: set <variable-name> = <value> 
     //Mac & Git Bash (Both are Bash terminals):
         **Command: exports <variable-name> = <value>
 &nbsp;
 
+### 6) Route Parameters 'api/resource/:<route-paramater>'
+Code:
+&nbsp;
 
+    //Add route parameters in the URI(Universal-Rescource-Identifier e.x:'/api/resource/id)
+    //URI with route parameters 'api/resource/:id'
+    //URIs can also have multiple route parameters 'api/resource/:month/:day/:year'
+    //See comments in [_index.js_](https://github.com/DariusRain/nodejs-course/blob/4-6-route-paramaters-23-09/index.js) 
+    //NOTE:
+        //Route paramaters are required but query string paramaters are not. 
+        //Query String paramaters are added to the uri starting with a question mark.
+        //Syntax: <required-uri>/:<required-route-parameter>/?<optional-querystring-paramater-key>=<optional-querystring-paramater-value>
+        //Ex: '/api/posts/:year/:month/?sortBy=name
+        // Query Strings are always in the req.query object.
+        // So the object in this case should appear as: {sortBy: 'name'} 
 
 
 
