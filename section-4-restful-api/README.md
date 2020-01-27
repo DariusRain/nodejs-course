@@ -86,9 +86,9 @@ Command: export PORT=5000
 ### 6) Route Parameters 'api/resource/:<route-paramater>'
 Code:
 &nbsp;
-    //Add route parameters in the URI(Universal-Rescource-Identifier e.x:'/api/resource/id) \n
-    //URI with route parameters 'api/resource/:id' \n
-    //URIs can also have multiple route parameters 'api/resource/:month/:day/:year' \n
+    //Add route parameters in the URI(Universal-Rescource-Identifier e.x:'/api/resource/id) <br>
+    //URI with route parameters 'api/resource/:id' <br>
+    //URIs can also have multiple route parameters 'api/resource/:month/:day/:year' <br>
     //See comments in [_index.js_](https://github.com/DariusRain/nodejs-course/blob/4-6-route-paramaters-23-09/index.js) 
     //NOTE:
         //Route paramaters are required but query string paramaters are not. 
