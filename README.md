@@ -47,7 +47,6 @@ Command: npm i express
 
 Code: 
 &nbsp;
-
      // Set up express server and routes for your application. 
     //See comments in [_index.js_](https://github.com/DariusRain/nodejs-course/blob/4-2-create-server-routes-14-45/index.js)
 
@@ -84,7 +83,6 @@ Command: export PORT=5000
 ### 6) Route Parameters 'api/resource/:<route-paramater>'
 Code:
 &nbsp;
-
     //Add route parameters in the URI(Universal-Rescource-Identifier e.x:'/api/resource/id)
     //URI with route parameters 'api/resource/:id'
     //URIs can also have multiple route parameters 'api/resource/:month/:day/:year'
