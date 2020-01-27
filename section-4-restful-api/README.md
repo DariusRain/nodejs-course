@@ -1,4 +1,4 @@
-# Darius Rain - Node.js Course with [_Mash_](https://www.youtube.com/user/programmingwithmosh) 
+# Darius Rain - Node.js Course with [_Mosh_](https://www.youtube.com/user/programmingwithmosh) 
 ## Section 4. Building RESTful API_s Using Express
 &nbsp;
 ### 0) Initialize and configure git repository and npm package.json
