@@ -75,9 +75,9 @@ Code:
 Command: export PORT=5000
 &nbsp;
     //Windows (CMD ~ Windows Command Prompt): 
-        **Command: set <variable-name> = <value> 
+        **Command: set variable-name = value 
     //Mac & Git Bash (Both are Bash terminals):
-        **Command: exports <variable-name> = <value>
+        **Command: exports variable-name = value
 &nbsp;
 
 ### 6) Route Parameters 'api/resource/:<route-paramater>'
@@ -90,7 +90,7 @@ Code:
     //NOTE:
         //Route paramaters are required but query string paramaters are not. 
         //Query String paramaters are added to the uri starting with a question mark.
-        //Syntax: <required-uri>/:<required-route-parameter>/?<optional-querystring-paramater-key>=<optional-querystring-paramater-value>
+        //Syntax: required-uri/:required-route-parameter/?optional-querystring-paramater-key=optional-querystring-paramater-value
         //Ex: '/api/posts/:year/:month/?sortBy=name
         // Query Strings are always in the req.query object.
         // So the object in this case should appear as: {sortBy: 'name'} 
