@@ -131,7 +131,7 @@ Code:
 //See comments here [_branch:4-8-handling-post-requests-33-54@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-8-handling-post-requests-33-54/section-4-restful-api/index.js)<br>
 
 &nbsp;
-### [_9)_]((https://youtu.be/pKd0Rpw7O48?t=2035)) Install and use [_Postman_](https://www.getpostman.com/downloads/) 
+### [_9)_](https://youtu.be/pKd0Rpw7O48?t=2035) Install and use [_Postman_](https://www.getpostman.com/downloads/) 
 Note: Skip download & installment of Postman if you allready have it. 
 &nbsp;
 //Postman is a software that helps developers test their APIs by sending and retriving data using the features of Postman. <br>
