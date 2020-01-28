@@ -1,8 +1,10 @@
-# Darius Rain - Node.js Course with [_Mosh_](https://www.youtube.com/user/programmingwithmosh)
+# Darius Rain - Node.js Course with [_Mosh_](https://www.youtube.com/user/programmingwithmosh) 
+<hr>
 
 ## Section 4. Building RESTful API_s Using Express
 &nbsp;
-
+NOTE: The numbered sections (e.x: 1), 2) are links to each part of the video relating to each section I go over.
+&nbsp;
 ### What is REST or RESTful API?
 &nbsp;
 
@@ -51,7 +53,7 @@ Command: npm i <package-name> <br>
 
 &nbsp;
 
-### 1) Install npm package 'express'.
+### [_1)_](https://youtu.be/pKd0Rpw7O48?t=410) Install npm package 'express'.
 
 Command: npm i express <br>
 &nbsp;
@@ -59,7 +61,7 @@ Command: npm i express <br>
 //This dependency will be shown in the 'package.json' file. <br>
 &nbsp;
 
-### 2) Configure express server in 'index.js' file.
+### [_2)_](https://youtu.be/pKd0Rpw7O48?t=550) Configure express server in 'index.js' file.
 
 Code:
 &nbsp;
@@ -68,7 +70,7 @@ Code:
 
 &nbsp;
 
-### 3) Install npm packge 'nodemon' (A dev dependency)
+### [_3)_](https://youtu.be/pKd0Rpw7O48?t=897) Install npm packge 'nodemon' (A dev dependency)
 
 Command: npm i nodemon -D <br>
 &nbsp;
@@ -78,7 +80,7 @@ Command: npm i nodemon -D <br>
 //constantly watching for changes. <br>
 &nbsp;
 
-### 4) Add 'process.env.PORT' as a port variable.
+### [_4)_](https://youtu.be/pKd0Rpw7O48?t=1015) Add 'process.env.PORT' as a port variable.
 
 Code:
 &nbsp;
@@ -87,7 +89,7 @@ Code:
 
 &nbsp;
 
-### 5) Set enviromnent variable in terminal.
+### [_5)_](https://youtu.be/pKd0Rpw7O48?t=1119) Set enviromnent variable in terminal.
 
 Command: export PORT=5000 <br>
 &nbsp;
@@ -97,7 +99,7 @@ Command: set variable-name=value <br>
 Command: exports variable-name=value <br>
 &nbsp;
 
-### 6) Route Parameters 'api/resource/:<route-paramater>'
+### [_6)_](https://youtu.be/pKd0Rpw7O48?t=1186) Route Parameters 'api/resource/:<route-paramater>'
 
 Code:
 &nbsp;
@@ -114,15 +116,24 @@ Code:
 // So the object in this case should appear as: {sortBy: 'name'} <br>
 &nbsp;
 
-### 7) Handling 'GET' requests.
+### [_7)_](https://youtu.be/pKd0Rpw7O48?t=1522) Handling 'GET' requests.
 Code: 
 &nbsp;
-//Use the route parameter's value with the find() method that returns based on a set boolean comparison
-//See comments here [_branch:4-7-handling-get-requests-33-10@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-7-handling-get-requests-33-10/section-4-restful-api/index.js) 
+//Use the route parameter's value with the find() method that returns based on a set boolean comparison. <br>
+//See comments here [_branch:4-7-handling-get-requests-33-10@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-7-handling-get-requests-33-10/section-4-restful-api/index.js)<br> 
 
+&nbsp;
 
-### 8) Handling 'POST' requests.
+### [_8)_](https://youtu.be/pKd0Rpw7O48?t=1810) Handling 'POST' requests.
 Code:
 &nbsp;
-//Use the '.post()' method with express and add the route and callback that returns the value of a new post.
-//See comments here [_branch:4-8-handling-post-requests-33-54@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-8-handling-post-requests-33-54/section-4-restful-api/index.js) 
+//Use the '.post()' method with express and add the route and callback that returns the value of a new post.<br>
+//See comments here [_branch:4-8-handling-post-requests-33-54@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-8-handling-post-requests-33-54/section-4-restful-api/index.js)<br>
+
+&nbsp;
+### [_9)_]((https://youtu.be/pKd0Rpw7O48?t=2035)) Install and use [_Postman_](https://www.getpostman.com/downloads/) 
+Note: Skip download & installment of Postman if you allready have it. 
+&nbsp;
+//Postman is a software that helps developers test their APIs by sending and retriving data using the features of Postman. <br>
+//The reason for this becouse using the browser to test our API sometimes requires some html code. <br>
+//So Postman is a great help in development. <br>

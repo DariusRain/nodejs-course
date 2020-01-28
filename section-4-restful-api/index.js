@@ -1,13 +1,11 @@
 //Darius Rain
-//Index (v8.0.0) ~ Handle posts requests.
+//Index (v9.0.0) ~ Postman.
 
 // Imported the express framework and invoked the value of it to the variable 'index'
 const express = require("express"),
   index = express();
 
-//**NEW**:Use two new methods from the express module called '<required-express-variable-name-here>.json()' & '.use()'
-//and include it in a middle where in this case to parse JSON data into objects value form.
-
+//Middle-ware
 index.use(express.json());
 
 //Set an array of courses
@@ -25,6 +23,7 @@ index.get("/", (req, res) => {
 index.get("/api/courses", (req, res) => {
   res.send(courses);
 });
+
 //Example of route paramaters.
 index.get("/api/courses/:id", (req, res) => {
   const course = courses.find(course => course.id === parseInt(req.params.id));
@@ -37,24 +36,14 @@ index.get("/api/courses/:id", (req, res) => {
   return res.send(course);
 });
 
-//**NEW**: Handling post requests with using the method '.post()' instead of '.get()'
-//NOTES:
-//The 'req.body' object is similar to 'req.params' & 'req.query' the differences are that
-// All of them come from different sources
-
-// req.query comes from query parameters in the URL such as http://localhost:<port>/api/courses?courseName=course2 where req.query.courseName === "course2".
-
-// req.params comes from routes http://localhost:<port>/api/course/:courseId, so a http 'GET' to that URI you can add any string value /.../api/courses/2'
-//then req.params.courseId === "2".
-
-// req.body comes from the body object in an html documetn most likely used for forms.
+//Example of 'POST' - requests
 index.post("api/courses/posts", (req, res) => {
   const course = {
     id: courses.length + 1,
     name: req.body.name
   };
   courses.push(course);
-  res.send(course)
+  res.send(course);
 });
 
 //Set port in enviroment variable from terminal then use the express module method .listen()
