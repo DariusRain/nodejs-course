@@ -64,7 +64,7 @@ Command: npm i express <br>
 Code:
 &nbsp;
 // Set up express server and routes for your application. <br>
-//See comments here [_@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-2-create-server-routes-14-45/section-4-restful-api/index.js) <br>
+//See comments here [_branch:4-2-create-server-routes-14-45@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-2-create-server-routes-14-45/section-4-restful-api/index.js) <br>
 
 &nbsp;
 
@@ -83,7 +83,7 @@ Command: npm i nodemon -D <br>
 Code:
 &nbsp;
 //Add process.env to the port vairable in 'index.js' <br>
-//See comments here [_@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-4-add-code-for-enviroment-varible-18-46/section-4-restful-api/index.js) <br>
+//See comments here [_branch:4-4-add-code-for-enviroment-varible-18-46@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-4-add-code-for-enviroment-varible-18-46/section-4-restful-api/index.js) <br>
 
 &nbsp;
 
@@ -104,7 +104,7 @@ Code:
 //Add route parameters in the URI(Universal-Rescource-Identifier e.x:'/api/resource/id) <br>
 //URI with route parameters 'api/resource/:id' <br>
 //URIs can also have multiple route parameters 'api/resource/:month/:day/:year' <br>
-//See comments [_@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-6-route-paramaters-23-09/section-4-restful-api/index.js) <br>
+//See comments [_branch:4-6-route-paramaters-23-09@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-6-route-paramaters-23-09/section-4-restful-api/index.js) <br>
 //NOTE:<br>
 //Route paramaters are required but query string paramaters are not. <br>
 //Query String paramaters are added to the uri starting with a question mark.<br>
@@ -118,4 +118,11 @@ Code:
 Code: 
 &nbsp;
 //Use the route parameter's value with the find() method that returns based on a set boolean comparison
-//See comments here [_@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-7-handling-get-requests-33-10/section-4-restful-api/index.js) 
+//See comments here [_branch:4-7-handling-get-requests-33-10@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-7-handling-get-requests-33-10/section-4-restful-api/index.js) 
+
+
+### 8) Handling 'POST' requests.
+Code:
+&nbsp;
+//Use the '.post()' method with express and add the route and callback that returns the value of a new post.
+//See comments here [_branch:4-8-handling-post-requests-33-54@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-8-handling-post-requests-33-54/section-4-restful-api/index.js) 
