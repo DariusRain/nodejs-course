@@ -3,7 +3,7 @@
 ## Section 4. Building RESTful API_s Using Express
 <hr>
 &nbsp;
-NOTE: The numbered sections (e.x: 1), 2) are links to each part of the video relating to each section I go over.
+NOTE: The numbered sections (e.x: 1), 2) are links to each part of the video relating to each section I go over.<br>
 &nbsp;
 ### What is REST or RESTful API?
 //[_REPRESENTATIONAL STATE TRANSFER_](https://doubleoctopus.com/security-wiki/protocol/representational-state-transfer/) 
@@ -62,7 +62,7 @@ Command: npm i express <br>
 
 ### [_2)_](https://youtu.be/pKd0Rpw7O48?t=550) Configure express server in 'index.js' file.
 
-Code:
+Code: <br>
 &nbsp;
 // Set up express server and routes for your application. <br>
 //See comments here [_branch:4-2@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-2-create-server-routes-14-45/section-4-restful-api/index.js) <br>
@@ -81,7 +81,7 @@ Command: npm i nodemon -D <br>
 
 ### [_4)_](https://youtu.be/pKd0Rpw7O48?t=1015) Add 'process.env.PORT' as a port variable.
 
-Code:
+Code: <br>
 &nbsp;
 //Add process.env to the port vairable in 'index.js' <br>
 //See comments here [_branch:4-4@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-4-add-code-for-enviroment-varible-18-46/section-4-restful-api/index.js) <br>
@@ -124,14 +124,14 @@ Code: <br>
 &nbsp;
 
 ### [_8)_](https://youtu.be/pKd0Rpw7O48?t=1810) Handling 'POST' requests.
-Code:
+Code: <br>
 &nbsp;
 //Use the '.post()' method with express and add the route and callback that returns the value of a new post.<br>
 //See comments here [_branch:4-8@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-8-handling-post-requests-33-54/section-4-restful-api/index.js)<br>
 
 &nbsp;
 ### [_9)_](https://youtu.be/pKd0Rpw7O48?t=2035) Install and use [_Postman_](https://www.getpostman.com/downloads/). 
-Note: Skip download & installment of Postman if you allready have it. 
+Note: Skip download & installment of Postman if you allready have it. <br>
 &nbsp;
 //Postman is a software that helps developers test their APIs by sending and retriving data using the features of Postman. <br>
 //The reason for this becouse using the browser to test our API sometimes requires some html code. <br>
