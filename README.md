@@ -1,13 +1,11 @@
 # Darius Rain - Node.js Course with [_Mosh_](https://www.youtube.com/user/programmingwithmosh) 
-<hr>
-
+<br>
 ## Section 4. Building RESTful API_s Using Express
+<hr>
 &nbsp;
 NOTE: The numbered sections (e.x: 1), 2) are links to each part of the video relating to each section I go over.
 &nbsp;
 ### What is REST or RESTful API?
-&nbsp;
-
 //[_REPRESENTATIONAL STATE TRANSFER_](https://doubleoctopus.com/security-wiki/protocol/representational-state-transfer/) 
 
 
@@ -57,6 +55,7 @@ Command: npm i <package-name> <br>
 
 Command: npm i express <br>
 &nbsp;
+//Node dependencies come from [_npm_](https://npmjs.com) (Node Package Manager)<br>
 //This installs express which is a lightweight framework for building a server.<br>
 //This dependency will be shown in the 'package.json' file. <br>
 &nbsp;
@@ -66,7 +65,7 @@ Command: npm i express <br>
 Code:
 &nbsp;
 // Set up express server and routes for your application. <br>
-//See comments here [_branch:4-2-create-server-routes-14-45@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-2-create-server-routes-14-45/section-4-restful-api/index.js) <br>
+//See comments here [_branch:4-2@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-2-create-server-routes-14-45/section-4-restful-api/index.js) <br>
 
 &nbsp;
 
@@ -85,7 +84,7 @@ Command: npm i nodemon -D <br>
 Code:
 &nbsp;
 //Add process.env to the port vairable in 'index.js' <br>
-//See comments here [_branch:4-4-add-code-for-enviroment-varible-18-46@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-4-add-code-for-enviroment-varible-18-46/section-4-restful-api/index.js) <br>
+//See comments here [_branch:4-4@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-4-add-code-for-enviroment-varible-18-46/section-4-restful-api/index.js) <br>
 
 &nbsp;
 
@@ -106,7 +105,7 @@ Code:
 //Add route parameters in the URI(Universal-Rescource-Identifier e.x:'/api/resource/id) <br>
 //URI with route parameters 'api/resource/:id' <br>
 //URIs can also have multiple route parameters 'api/resource/:month/:day/:year' <br>
-//See comments [_branch:4-6-route-paramaters-23-09@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-6-route-paramaters-23-09/section-4-restful-api/index.js) <br>
+//See comments [_branch:4-6@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-6-route-paramaters-23-09/section-4-restful-api/index.js) <br>
 //NOTE:<br>
 //Route paramaters are required but query string paramaters are not. <br>
 //Query String paramaters are added to the uri starting with a question mark.<br>
@@ -120,7 +119,7 @@ Code:
 Code: 
 &nbsp;
 //Use the route parameter's value with the find() method that returns based on a set boolean comparison. <br>
-//See comments here [_branch:4-7-handling-get-requests-33-10@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-7-handling-get-requests-33-10/section-4-restful-api/index.js)<br> 
+//See comments here [_branch:4-7@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-7-handling-get-requests-33-10/section-4-restful-api/index.js)<br> 
 
 &nbsp;
 
@@ -128,12 +127,20 @@ Code:
 Code:
 &nbsp;
 //Use the '.post()' method with express and add the route and callback that returns the value of a new post.<br>
-//See comments here [_branch:4-8-handling-post-requests-33-54@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-8-handling-post-requests-33-54/section-4-restful-api/index.js)<br>
+//See comments here [_branch:4-8@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-8-handling-post-requests-33-54/section-4-restful-api/index.js)<br>
 
 &nbsp;
-### [_9)_](https://youtu.be/pKd0Rpw7O48?t=2035) Install and use [_Postman_](https://www.getpostman.com/downloads/) 
+### [_9)_](https://youtu.be/pKd0Rpw7O48?t=2035) Install and use [_Postman_](https://www.getpostman.com/downloads/). 
 Note: Skip download & installment of Postman if you allready have it. 
 &nbsp;
 //Postman is a software that helps developers test their APIs by sending and retriving data using the features of Postman. <br>
 //The reason for this becouse using the browser to test our API sometimes requires some html code. <br>
 //So Postman is a great help in development. <br>
+
+&nbsp;
+### [_10)_](https://youtu.be/pKd0Rpw7O48?t=2163) Input Validation.
+Code:
+&nbsp;
+//Add some input logic for the post request, in this case I am using boolean logic to solve this. <br>
+//But in real world application you should use a node package similar to express but to handle the validation of data being sent to the client. <br>
+//So in the next section I will be using the Joi package from [_npm_](https://npmjs.com). <br>
