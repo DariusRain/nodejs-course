@@ -135,7 +135,7 @@ Code: <br>
 ### [_9)_](https://youtu.be/pKd0Rpw7O48?t=2035) Install and use [_Postman_](https://www.getpostman.com/downloads/). 
 Note: Skip download & installment of Postman if you allready have it. <br>
 &nbsp;
-//Postman is a software that helps developers test their APIs by sending and retriving data using the features of Postman. <br>
+//Postman is a software that helps developers test their APIs by sending and retriving data using its features. <br>
 //The reason for this becouse using the browser to test our API sometimes requires some html code. <br>
 //So Postman is a great help in development. <br>
 
