@@ -100,7 +100,7 @@ Command: exports variable-name=value <br>
 
 ### [_6)_](https://youtu.be/pKd0Rpw7O48?t=1186) Route Parameters 'api/resource/:<route-paramater>'
 
-Code:
+Code:<br>
 &nbsp;
 //Add route parameters in the URI(Universal-Rescource-Identifier e.x:'/api/resource/id) <br>
 //URI with route parameters 'api/resource/:id' <br>
@@ -116,7 +116,7 @@ Code:
 &nbsp;
 
 ### [_7)_](https://youtu.be/pKd0Rpw7O48?t=1522) Handling 'GET' requests.
-Code: 
+Code: <br> 
 &nbsp;
 //Use the route parameter's value with the find() method that returns based on a set boolean comparison. <br>
 //See comments here [_branch:4-7@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-7-handling-get-requests-33-10/section-4-restful-api/index.js)<br> 
@@ -139,8 +139,9 @@ Note: Skip download & installment of Postman if you allready have it.
 
 &nbsp;
 ### [_10)_](https://youtu.be/pKd0Rpw7O48?t=2163) Input Validation.
-Code:
+Code:<br>
 &nbsp;
+//See comments here [_branch:4-10@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-10-input-validation-example-36-04/section-4-restful-api/index.js)<br>
 //Add some input logic for the post request, in this case I am using boolean logic to solve this. <br>
 //But in real world application you should use a node package similar to express but to handle the validation of data being sent to the client. <br>
 //So in the next section I will be using the Joi package from [_npm_](https://npmjs.com). <br>
