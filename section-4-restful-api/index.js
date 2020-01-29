@@ -37,7 +37,7 @@ index.get("/api/courses/:id", (req, res) => {
 });
 
 //Example of 'POST' - requests
-index.post("api/courses/posts", (req, res) => {
+index.post("/api/courses/posts", (req, res) => {
   const course = {
     id: courses.length + 1,
     name: req.body.name
