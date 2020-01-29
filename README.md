@@ -1,4 +1,5 @@
-# Darius Rain - Node.js Course with [_Mosh_](https://www.youtube.com/user/programmingwithmosh) 
+# Darius Rain 
+# Node.js Course with [_Mosh_](https://www.youtube.com/user/programmingwithmosh) 
 <hr>
 
 ## Section 4. Building RESTful APIs Using Express<br>
