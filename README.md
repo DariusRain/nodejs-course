@@ -1,4 +1,5 @@
-# Darius Rain - Node.js Course with [_Mosh_](https://www.youtube.com/user/programmingwithmosh) 
+# Darius Rain - Node.js Course with [_Mosh_](https://www.youtube.com/user/programmingwithmosh)
+
 <hr>
 
 ## Section 4. Building RESTful APIs Using Express<br>
@@ -6,13 +7,10 @@
 &nbsp;
 
 &nbsp;
+
 ### What is REST or RESTful API?<br>
-//[_REPRESENTATIONAL STATE TRANSFER_](https://doubleoctopus.com/security-wiki/protocol/representational-state-transfer/) 
 
-
-
-
-
+//[_REPRESENTATIONAL STATE TRANSFER_](https://doubleoctopus.com/security-wiki/protocol/representational-state-transfer/)
 
 &nbsp;
 
@@ -52,7 +50,7 @@ Command: npm i <package-name> <br>
 
 &nbsp;
 
-### [_1)_](https://youtu.be/pKd0Rpw7O48?t=410) Install npm package 'express'.
+### [_1)_](https://youtu.be/pKd0Rpw7O48?t=410) Install npm package [_'Express'_](https://www.npmjs.com/package/express).
 
 Command: npm i express <br>
 &nbsp;
@@ -117,21 +115,25 @@ Code:<br>
 &nbsp;
 
 ### [_7)_](https://youtu.be/pKd0Rpw7O48?t=1522) Handling 'GET' requests.
-Code: <br> 
+
+Code: <br>
 &nbsp;
 //Use the route parameter's value with the find() method that returns based on a set boolean comparison. <br>
-//See comments here [_branch:4-7@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-7-handling-get-requests-33-10/section-4-restful-api/index.js)<br> 
+//See comments here [_branch:4-7@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-7-handling-get-requests-33-10/section-4-restful-api/index.js)<br>
 
 &nbsp;
 
 ### [_8)_](https://youtu.be/pKd0Rpw7O48?t=1810) Handling 'POST' requests.
+
 Code: <br>
 &nbsp;
 //Use the '.post()' method with express and add the route and callback that returns the value of a new post.<br>
 //See comments here [_branch:4-8@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-8-handling-post-requests-33-54/section-4-restful-api/index.js)<br>
 
 &nbsp;
-### [_9)_](https://youtu.be/pKd0Rpw7O48?t=2035) Install and use [_Postman_](https://www.getpostman.com/downloads/). 
+
+### [_9)_](https://youtu.be/pKd0Rpw7O48?t=2035) Install and use [_Postman_](https://www.getpostman.com/downloads/).
+
 Note: Skip download & installment of Postman if you allready have it. <br>
 &nbsp;
 //Postman is a software that helps developers test their APIs by sending and retriving data using the features of Postman. <br>
@@ -139,10 +141,21 @@ Note: Skip download & installment of Postman if you allready have it. <br>
 //So Postman is a great help in development. <br>
 
 &nbsp;
+
 ### [_10)_](https://youtu.be/pKd0Rpw7O48?t=2163) Input Validation.
+
 Code:<br>
 &nbsp;
 //See comments here [_branch:4-10@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-10-input-validation-example-36-04/section-4-restful-api/index.js)<br>
 //Add some input logic for the post request, in this case I am using boolean logic to solve this. <br>
 //But in real world application you should use a node package similar to express but to handle the validation of data being sent to the client. <br>
 //So in the next section I will be using the Joi package from [_npm_](https://npmjs.com). <br>
+&nbsp;
+### [_11)_](https://youtu.be/pKd0Rpw7O48?t=2270) Input Validation with npm package [_'Joi'_](https://www.npmjs.com/package/@hapi/joi).
+Code: <br>
+&nbsp;
+//See comments here [_branch:4-11@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-11-joi-input-validation-37-50/section-4-restful-api/index.js)<br>
+//The Joi package is a framework that helps developers set standards to their data structures by using schemas.<br>
+//Joi also validates any new data sent by the client based in any schema you set in place.<br>
+//IMPORTANT: Syntax changes due to new owner of git repo (Explain new syntax in [_comments_](https://github.com/DariusRain/nodejs-course/blob/4-11-joi-input-validation-37-50/section-4-restful-api/index.js)).<br>
+&nbsp;
