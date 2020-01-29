@@ -48,7 +48,7 @@ index.get("/api/courses/:id", (req, res) => {
 //then req.params.courseId === "2".
 
 // req.body comes from the body object in an html documetn most likely used for forms.
-index.post("api/courses/posts", (req, res) => {
+index.post("/api/courses/", (req, res) => {
   const course = {
     id: courses.length + 1,
     name: req.body.name
