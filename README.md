@@ -147,3 +147,12 @@ Code:<br>
 //Add some input logic for the post request, in this case I am using boolean logic to solve this. <br>
 //But in real world application you should use a node package similar to express but to handle the validation of data being sent to the client. <br>
 //So in the next section I will be using the Joi package from [_npm_](https://npmjs.com). <br>
+
+### [_11)_](https://youtu.be/pKd0Rpw7O48?t=2270) Input Validation with npm package [_'Joi'_](https://www.npmjs.com/package/@hapi/joi).
+Code: <br>
+&nbsp;
+//See comments here [_branch:4-11@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-11-joi-input-validation-37-50/section-4-restful-api/index.js)<br>
+//The Joi package is a framework that helps developers set standards to their data structures by using schemas.<br>
+//Joi also validates any new data sent by the client based in any schema you set in place.<br>
+//IMPORTANT: Syntax changes due to new owner of git repo (Explain new syntax in [_comments_](https://github.com/DariusRain/nodejs-course/blob/4-11-joi-input-validation-37-50/section-4-restful-api/index.js)).<br>
+&nbsp;
