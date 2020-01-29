@@ -147,6 +147,7 @@ Code:<br>
 //Add some input logic for the post request, in this case I am using boolean logic to solve this. <br>
 //But in real world application you should use a node package similar to express but to handle the validation of data being sent to the client. <br>
 //So in the next section I will be using the Joi package from [_npm_](https://npmjs.com). <br>
+&nbsp;
 
 ### [_11)_](https://youtu.be/pKd0Rpw7O48?t=2270) Input Validation with npm package [_'Joi'_](https://www.npmjs.com/package/@hapi/joi).
 Code: <br>
