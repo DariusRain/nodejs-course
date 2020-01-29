@@ -1,9 +1,10 @@
 # Darius Rain - Node.js Course with [_Mosh_](https://www.youtube.com/user/programmingwithmosh) 
 <br>
 ## Section 4. Building RESTful API_s Using Express
+NOTE: The numbered sections (e.x: 1), 2) are links to each part of the video relating to each section I go over.<br>
 <hr>
 &nbsp;
-NOTE: The numbered sections (e.x: 1), 2) are links to each part of the video relating to each section I go over.<br>
+
 &nbsp;
 ### What is REST or RESTful API?<br>
 //[_REPRESENTATIONAL STATE TRANSFER_](https://doubleoctopus.com/security-wiki/protocol/representational-state-transfer/) 
