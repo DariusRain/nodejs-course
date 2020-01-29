@@ -53,7 +53,7 @@ Command: npm i <package-name> <br>
 
 &nbsp;
 
-### [_1)_](https://youtu.be/pKd0Rpw7O48?t=410) Install npm package 'express'.
+### [_1)_](https://youtu.be/pKd0Rpw7O48?t=410) Install npm package '[_express_](https://www.npmjs.com/package/express)'.
 
 Command: npm i express <br>
 &nbsp;
@@ -149,7 +149,7 @@ Code:<br>
 //So in the next section I will be using the Joi package from [_npm_](https://npmjs.com). <br>
 &nbsp;
 
-### [_11)_](https://youtu.be/pKd0Rpw7O48?t=2270) Input Validation with npm package [_'Joi'_](https://www.npmjs.com/package/@hapi/joi).
+### [_11)_](https://youtu.be/pKd0Rpw7O48?t=2270) Input Validation with npm package '[_@hapi/joi_](https://www.npmjs.com/package/@hapi/joi)'.
 Code: <br>
 &nbsp;
 //See comments here [_branch:4-11@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-11-joi-input-validation-37-50/section-4-restful-api/index.js)<br>
