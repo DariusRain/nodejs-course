@@ -163,6 +163,11 @@ Code: <br>
 //The code logic to the PUT request used a combination of the find() method with the Joi validate() method.<br>
 //Added a function that takes a given parameter then validates that parameter with a set schema.<br>
 //Added an extra function that takes an array and object and assigns those values to the find() method then returns its value.<br>
-
-
 &nbsp;
+
+### [_13)_](https://youtu.be/pKd0Rpw7O48?t=3153) Handling 'DELETE' requests.
+Code: <br>
+&nbsp;
+//See comments here [_branch:4-12@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-13-handling-delete-requests-52-33/section-4-restful-api/index.js)<br>
+//The DELETE request was alot like a GET request with route parameters but adding deletion logic - 
+//- after a value has been found and if false return a 404 status codeif value is not found.

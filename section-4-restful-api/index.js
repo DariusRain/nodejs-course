@@ -1,5 +1,5 @@
 //Darius Rain
-//Index (v11.0.0) ~ Handling Put Requests
+//Index (v12.0.0) ~ Handling DELETE Requests
 
 // Imported the express framework and invoked the value of it to the variable 'index'
 const express = require("express"),
@@ -41,37 +41,32 @@ index.get("/api/courses/:id", (req, res) => {
   return res.send(course);
 });
 
-//**NEW**: Created function that validates courses to save code (Make these type of things a habit. Will help!).
+//Validator function for courses:
 function validateCourse(course) {
-  //The 'course' parameter will 99% of the time and should have the value of 'req.body'.
-
   //Schema
   const schema = Joi.object({
     course: Joi.string() //All the below methods instruct the validaton behavior for the property called 'name'.
       .min(3)
       .required()
   });
-  //Validator function for courses.
   const result = schema.validate(course);
   return result;
 }
 
-//**EXTRA**: Create a function that finds by course id.
-
+//Search array for id function.
 function searchArrayFindId(array, id) {
   id = parseInt(id);
   const found = array.find(property => property.id === id);
   if (!Array.isArray(array) && id && found) {
-    //res.status(404).send("Error 404: (Not Found)");
     return false;
   }
   return found;
 }
+
 //TEST searchArrayFind():
-console.log(searchArrayFindId(courses, 3));
+//console.log(searchArrayFindId(courses, 3));
 
 //Post route using the Joi schema and validator.
-
 index.post("/api/courses", (req, res) => {
   const result = validateCourse(req.body);
   //Return the predefined property '.error' if it has a truthy value
@@ -99,14 +94,11 @@ index.post("/api/courses", (req, res) => {
       .toString()
       .replace(",", ", Name: ")}.`
   );
-  //Function execution stops here and returns true. (Like to do this to return the succesds of a fucntion execution in case I need this value for something).
-  //This can always be removed, functions return a value of undefined by default.
   return true;
 });
 
-//**NEW**: Put request similar to the post request structure but combining the get request.
+//Put route for updating.
 index.put("/api/courses", (req, res) => {
-  //Had trouble with the length checking using joi schema just added my own logic.
   let lengthCheck = 3 > req.body.course.length;
 
   if (lengthCheck) {
@@ -116,23 +108,18 @@ index.put("/api/courses", (req, res) => {
     res.status(400).send("400: Bad Request.");
     return false;
   }
-  //Assign the following the value each a scustom function which returns the values I need.
-  //For less code and can be universal else where in the coding enviroment.
+
   const findCourse = searchArrayFindId(courses, req.body.id);
   const validate = validateCourse(req.body.course);
 
-  //If the above variables return a falsey value then execute the following code block.
   if (!findCourse && validate) {
     console.log("PUT (error:404): Cannot find course");
     res.status(404).send("Cannot update whats not found... ERR:404");
     return false;
   }
-  //If function continues then that means it is true according to the above logic.
-  //So in this case i will be re-assigning a value to the course property
-  //the value comes from what was returned from the 'searchArrayFindId()' function -
-  //Which is assign to the variable 'findCourse'
+
   findCourse.course = req.body.course;
-  //Then return the result the client and the server console.
+
   console.log(
     `PUT (Success: 200): ~> Array: Courses | ID: ${findCourse.id} <~`
   );
@@ -140,8 +127,38 @@ index.put("/api/courses", (req, res) => {
 
   return true;
 });
-//Set port in enviroment variable from terminal (exports <enviroment-variable-name>=<port-number> If on Windows CMD then use command 'set' instead of exports.')
-//then use the express module method .listen()
+
+//**NEW**: Delete route.
+//The delete route reminds me of a get request including the find() method but just adding a splice or another method of deletion to it.
+index.delete('/api/courses/:id', (req, res) => {
+  //I assign a variable named 'id' the value of 'req.params.id' so I dont repeat that entire object.
+  //Parse it incase it was a string.
+  //Use & assign the value returned by the 'searchArrayFindById()' function. Returns the object if found, otherwise it returns false.
+
+const id = parseInt(req.params.id);
+const found = searchArrayFindId(courses, id);
+
+//This conditional depends if the value of the 'found' variable has a false value then it is true due to the logical NOT operator -> '!'. 
+if(!found){
+  console.log(`DELETE (error:404): ~>Course ID#: ${id} Cannot be found<~`)
+return res.status(404).send(`Error 404: Not Found \n Course ID#:${id}`)
+}
+//Code continues course if the above coditional is false.
+
+
+//TEST found value
+//console.log(courses.indexOf(found))
+
+//Use the indexOf and splice core methods with the courses array then pass it the parameter of the found object.
+//The indexOf returns an index number location of that object.
+//In this case the splice method takes two parameters 1 starting with a index number (where to start deleting), -//- 2 ending with a index number (where to end deletion).
+
+const deletedCourse = courses.splice(courses.indexOf(found), 1);
+
+//Now log the results to the client and server.
+console.log(`DELETE (success:200): ~>Deleted Course ID#: ${id}<~`)
+return res.status(200).send(`Deleted course: \n ${deletedCourse}`)
+})
 
 const port = process.env.PORT || 3000;
 index.listen(port, () => {
