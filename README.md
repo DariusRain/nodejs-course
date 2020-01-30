@@ -97,7 +97,7 @@ Command: export PORT=5000 <br>
 //Windows (CMD ~ Windows Command Prompt): <br>
 Command: set variable-name=value <br>
 //Mac & Git Bash (Both are Bash terminals): <br>
-Command: exports variable-name=value <br>
+Command: export variable-name=value <br>
 &nbsp;
 
 ### [_6)_](https://youtu.be/pKd0Rpw7O48?t=1186) Route Parameters 'api/resource/:<route-paramater>'
@@ -147,7 +147,7 @@ Code:<br>
 //Add some input logic for the post request, in this case I am using boolean logic to solve this. <br>
 //But in real world application you should use a node package similar to express but to handle the validation of data being sent to the client. <br>
 //So in the next section I will be using the Joi package from [_npm_](https://npmjs.com). <br>
-
+&nbsp;
 ### [_11)_](https://youtu.be/pKd0Rpw7O48?t=2270) Input Validation with npm package [_'Joi'_](https://www.npmjs.com/package/@hapi/joi).
 Code: <br>
 &nbsp;
@@ -155,4 +155,14 @@ Code: <br>
 //The Joi package is a framework that helps developers set standards to their data structures by using schemas.<br>
 //Joi also validates any new data sent by the client based in any schema you set in place.<br>
 //IMPORTANT: Syntax changes due to new owner of git repo (Explain new syntax in [_comments_](https://github.com/DariusRain/nodejs-course/blob/4-11-joi-input-validation-37-50/section-4-restful-api/index.js)).<br>
+&nbsp;
+### [_12)_](https://youtu.be/pKd0Rpw7O48?t=2643) Handling 'PUT' requests.
+Code: <br>
+&nbsp;
+//See comments here [_branch:4-12@index.js_](https://github.com/DariusRain/nodejs-course/blob/4-12-handling-put-requests-44-03/section-4-restful-api/index.js)<br>
+//The code logic to the PUT request used a combination of the find() method with the Joi validate() method.<br>
+//Added a function that takes a given parameter then validates that parameter with a set schema.<br>
+//Added an extra function that takes an array and object and assigns those values to the find() method then returns its value.<br>
+
+
 &nbsp;
