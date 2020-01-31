@@ -7,7 +7,7 @@ Node.js Project</p>
 <hr>
 
 <div align="center">
-  <h3>Section 4: RESTful APIs.</h3>
+  <h3><a href="https://github.com/DariusRain/nodejs-course/tree/master/section-4-restful-api">Section 4</a>: RESTful APIs.</h3>
 </div>
 
 
