@@ -12,7 +12,7 @@ Node.js Project</p>
   <br>
   <h3><a href="#">Section 2</a>: Node Module System</h3>
   <br>
-  <h3><a href="#">Section 3</a>: </h3>
+  <h3><a href="#">Section 3</a>: Node Package Manager</h3>
   <br>
   <h3><a href="https://github.com/DariusRain/nodejs-course/tree/master/section-4-restful-api">Section 4</a>: RESTful APIs.</h3>
   <br>
