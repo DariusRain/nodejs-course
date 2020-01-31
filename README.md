@@ -6,4 +6,8 @@ Node.js Project</p>
 </div>
 <hr>
 
+<div align="center">
+  <h3>Section 4: RESTful APIs.</h3>
+</div>
+
 
