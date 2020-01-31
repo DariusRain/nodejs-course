@@ -1,5 +1,7 @@
 
+<div height="20px">
 ![](https://cdn.freebiesupply.com/logos/large/2x/nodejs-1-logo-png-transparent.png)
+</div>
 <div align="center"> 
 <h2>Section 4. Building RESTful APIs Using Express</h2>
  <hr style="color: black;">
