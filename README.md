@@ -7,7 +7,16 @@ Node.js Project</p>
 <hr>
 
 <div align="center">
+  
+  <h3><a href="#">Section 1</a>:</h3>
+  <br>
+  <h3><a href="#">Section 2</a>:</h3>
+  <br>
+  <h3><a href="#">Section 3</a>:</h3>
+  <br>
   <h3><a href="https://github.com/DariusRain/nodejs-course/tree/master/section-4-restful-api">Section 4</a>: RESTful APIs.</h3>
+  <br>
+  <h3><a href="https://github.com/DariusRain/nodejs-course/tree/master/section-5-asynchronous-javascript">Section 5</a>: Asynchonous Javascript</h3>
 </div>
 
 
