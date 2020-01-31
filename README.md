@@ -1,6 +1,6 @@
 
 <div height="20px">
-<img href="https://cdn.freebiesupply.com/logos/large/2x/nodejs-1-logo-png-transparent.png">
+<img src="https://cdn.freebiesupply.com/logos/large/2x/nodejs-1-logo-png-transparent.png">
 </div>
 <div align="center"> 
 <h2>Section 4. Building RESTful APIs Using Express</h2>
