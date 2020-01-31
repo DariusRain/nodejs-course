@@ -1,7 +1,6 @@
 
+! [](https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn.freebiesupply.com%2Flogos%2Fthumbs%2F2x%2Fnodejs-1-logo.png&imgrefurl=https%3A%2F%2Ffreebiesupply.com%2Flogos%2Fnode-js-logo%2F&docid=Kxg8U0A7sQfndM&tbnid=YTfBFrtugnKYPM%3A&vet=10ahUKEwiW6_qtzKznAhVYlHIEHYbVBYkQMwhEKAAwAA..i&w=800&h=600&client=firefox-b-1-d&bih=607&biw=1280&q=node%20js&ved=0ahUKEwiW6_qtzKznAhVYlHIEHYbVBYkQMwhEKAAwAA&iact=mrc&uact=8)
 <div align="center"> 
-
-<h1>Node.js Course with <a href="https://www.youtube.com/user/programmingwithmosh">Mosh</a></h1>
 <h2>Section 4. Building RESTful APIs Using Express</h2>
  <hr style="color: black;">
  </div>
