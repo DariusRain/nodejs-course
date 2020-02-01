@@ -1,5 +1,5 @@
 <h2>Darius Rain <h2>
-<h2>Nodejs RESTful APIs</h2>
+<h2>RESTful APIs</h2>
 <hr>
 
 <div>
