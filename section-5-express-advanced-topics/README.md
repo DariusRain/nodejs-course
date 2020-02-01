@@ -26,7 +26,8 @@
 <div>
     <pre>
     See code & comments-> <a href="https://github.com/DariusRain/nodejs-restful-apis/blob/5-2-custom-middleware-vid-3/index.js">branch:5-2@index.js</a>
-    Custom middleware is when you add your own call back function as a parameter in the 'use()' route handler method.
+    Custom middleware is when you add your own call back function as a parameter 
+    in the 'use()' route handler method.
     <br>
     All middleware functions takes 3 parameters the request object called 'req',
     response object called 'res' and a callback function called 'next()'.
