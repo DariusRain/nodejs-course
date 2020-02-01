@@ -65,7 +65,7 @@ Command: npm i express <br>
 Code: <br>
 &nbsp;
 // Set up express server and routes for your application. <br>
-//See comments here [_branch:4-2@index.js_](https://github.com/DariusRain/nodejs-restful-apis/blob/4-2-create-server-routes-14-45/section-4-restful-api/index.js) <br>
+//See comments here [_branch:4-2@index.js_](https://github.com/DariusRain/nodejs-restful-apis/tree/4-2-create-server-routes-14-45/section-4-restful-api/index.js) <br>
 
 &nbsp;
 
@@ -84,7 +84,7 @@ Command: npm i nodemon -D <br>
 Code: <br>
 &nbsp;
 //Add process.env to the port vairable in 'index.js' <br>
-//See comments here [_branch:4-4@index.js_](https://github.com/DariusRain/nodejs-restful-apis/blob/4-4-add-code-for-enviroment-varible-18-46/section-4-restful-api/index.js) <br>
+//See comments here [_branch:4-4@index.js_](https://github.com/DariusRain/nodejs-restful-apis/tree/4-4-add-code-for-enviroment-varible-18-46/section-4-restful-api/index.js) <br>
 
 &nbsp;
 
@@ -105,7 +105,7 @@ Code:<br>
 //Add route parameters in the URI(Universal-Rescource-Identifier e.x:'/api/resource/id) <br>
 //URI with route parameters 'api/resource/:id' <br>
 //URIs can also have multiple route parameters 'api/resource/:month/:day/:year' <br>
-//See comments [_branch:4-6@index.js_](https://github.com/DariusRain/nodejs-restful-apis/blob/4-6-route-paramaters-23-09/section-4-restful-api/index.js) <br>
+//See comments [_branch:4-6@index.js_](https://github.com/DariusRain/nodejs-restful-apis/tree/4-6-route-paramaters-23-09/section-4-restful-api/index.js) <br>
 //NOTE:<br>
 //Route paramaters are required but query string paramaters are not. <br>
 //Query String paramaters are added to the uri starting with a question mark.<br>
@@ -120,7 +120,7 @@ Code:<br>
 Code: <br>
 &nbsp;
 //Use the route parameter's value with the find() method that returns based on a set boolean comparison. <br>
-//See comments here [_branch:4-7@index.js_](https://github.com/DariusRain/nodejs-restful-apis/blob/4-7-handling-get-requests-33-10/section-4-restful-api/index.js)<br>
+//See comments here [_branch:4-7@index.js_](https://github.com/DariusRain/nodejs-restful-apis/tree/4-7-handling-get-requests-33-10/section-4-restful-api/index.js)<br>
 
 &nbsp;
 
@@ -129,7 +129,7 @@ Code: <br>
 Code: <br>
 &nbsp;
 //Use the '.post()' method with express and add the route and callback that returns the value of a new post.<br>
-//See comments here [_branch:4-8@index.js_](https://github.com/DariusRain/nodejs-restful-apis/blob/4-8-handling-post-requests-33-54/section-4-restful-api/index.js)<br>
+//See comments here [_branch:4-8@index.js_](https://github.com/DariusRain/nodejs-restful-apis/tree/4-8-handling-post-requests-33-54/section-4-restful-api/index.js)<br>
 
 &nbsp;
 
@@ -147,7 +147,7 @@ Note: Skip download & installment of Postman if you allready have it. <br>
 
 Code:<br>
 &nbsp;
-//See comments here [_branch:4-10@index.js_](https://github.com/DariusRain/nodejs-restful-apis/blob/4-10-input-validation-example-36-04/section-4-restful-api/index.js)<br>
+//See comments here [_branch:4-10@index.js_](https://github.com/DariusRain/nodejs-restful-apis/tree/4-10-input-validation-example-36-04/section-4-restful-api/index.js)<br>
 //Add some input logic for the post request, in this case I am using boolean logic to solve this. <br>
 //But in real world application you should use a node package similar to express but to handle the validation of data being sent to the client. <br>
 //So in the next section I will be using the Joi package from [_npm_](https://npmjs.com). <br>
@@ -157,17 +157,17 @@ Code:<br>
 
 Code: <br>
 &nbsp;
-//See comments here [_branch:4-11@index.js_](https://github.com/DariusRain/nodejs-restful-apis/blob/4-11-joi-input-validation-37-50/section-4-restful-api/index.js)<br>
+//See comments here [_branch:4-11@index.js_](https://github.com/DariusRain/nodejs-restful-apis/tree/4-11-joi-input-validation-37-50/section-4-restful-api/index.js)<br>
 //The Joi package is a framework that helps developers set standards to their data structures by using schemas.<br>
 //Joi also validates any new data sent by the client based in any schema you set in place.<br>
-//IMPORTANT: Syntax changes due to new owner of git repo (Explain new syntax in [_comments_](https://github.com/DariusRain/nodejs-restful-apis/blob/4-11-joi-input-validation-37-50/section-4-restful-api/index.js)).<br>
+//IMPORTANT: Syntax changes due to new owner of git repo (Explain new syntax in [_comments_](https://github.com/DariusRain/nodejs-restful-apis/tree/4-11-joi-input-validation-37-50/section-4-restful-api/index.js)).<br>
 &nbsp;
 
 ### [_12)_](https://youtu.be/pKd0Rpw7O48?t=2643) Handling 'PUT' requests.
 
 Code: <br>
 &nbsp;
-//See comments here [_branch:4-12@index.js_](https://github.com/DariusRain/nodejs-restful-apis/blob/4-12-handling-put-requests-44-03/section-4-restful-api/index.js)<br>
+//See comments here [_branch:4-12@index.js_](https://github.com/DariusRain/nodejs-restful-apis/tree/4-12-handling-put-requests-44-03/section-4-restful-api/index.js)<br>
 //The code logic to the PUT request used a combination of the find() method with the Joi validate() method.<br>
 //Added a function that takes a given parameter then validates that parameter with a set schema.<br>
 //Added an extra function that takes an array and object and assigns those values to the find() method then returns its value.<br>
@@ -177,6 +177,6 @@ Code: <br>
 
 Code: <br>
 &nbsp;
-//See comments here [_branch:4-12@index.js_](https://github.com/DariusRain/nodejs-restful-apis/blob/4-13-handling-delete-requests-52-33/section-4-restful-api/index.js)<br>
+//See comments here [_branch:4-12@index.js_](https://github.com/DariusRain/nodejs-restful-apis/tree/4-13-handling-delete-requests-52-33/section-4-restful-api/index.js)<br>
 //The DELETE request was alot like a GET request with route parameters but adding deletion logic - <br>
 //- after a value has been found and if false return a 404 status codeif value is not found.
