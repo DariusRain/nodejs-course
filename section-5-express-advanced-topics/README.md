@@ -135,6 +135,7 @@
     object with the property of 'NODE_ENV', or you can access 
     it this way 'app.get('env')'.
     Both should return a string representing the current enviroment your application is running in.
+    <br>
     Examples:
         'process.env.NODE_ENV' 
         (Returns 'undefined' by default if no value is added in the terminal)
