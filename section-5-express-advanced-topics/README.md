@@ -25,5 +25,8 @@
 <br>
 <img align="center" src="https://vietcanho.files.wordpress.com/2016/06/middleware.png?w=1462">
 <br>
+</div>
+<h3>2) <a href="http://expressjs.com/en/guide/using-middleware.html"> Custom Middleware.</a></h3>
+<div>
 
 </div>
