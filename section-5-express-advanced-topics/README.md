@@ -60,7 +60,7 @@
             object in a readable format for JavaScript code to handle.
             <br>
             Example:
-            ``javascript
+            ```javascript
                 app.use(express.json())
                 ```
             <br>
