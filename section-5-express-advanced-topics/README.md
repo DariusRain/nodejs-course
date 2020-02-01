@@ -60,12 +60,8 @@
             object in a readable format for JavaScript code to handle.
             <br>
             Example:
-            </pre>
-            ```js
-                app.use(express.json())
-            ```
+                app.use(express.json());
             <br>
-        <pre>
         <a href="http://expressjs.com/en/api.html#express.urlencoded">express.urlEncoded()</a>: 
             Interprets a URL Encoded payload from the client (ex: http//localhost:3000/key=value&key=value),
             so any of your route handlers can use the payload as a object during operations.
