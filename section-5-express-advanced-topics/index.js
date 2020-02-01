@@ -3,14 +3,36 @@
 
 // Imports
 const express = require("express"),
-      logger = require("./logger"),
-      Joi = require("@hapi/joi"),
-      helmet = require('helmet'), //NEW --Thirdparty middleware for securing application.
-      morgan = require("morgan"), //NEW --Thirdparty middleware for logging HTTP requests
-      index = express();
+  logger = require("./logger"),
+  Joi = require("@hapi/joi"),
+  helmet = require("helmet"), //NEW --Thirdparty middleware for securing application.
+  morgan = require("morgan"), //NEW --Thirdparty middleware for logging HTTP requests
+  index = express();
+
+//**NEW**:
+//Check and handle deployment enviroment
+//Two ways of seeing current enviroment
+
+//1. This way returns 'undefined' by default if no enviroment is set. 
+//(Expired Code)
+// console.log(`NODE_ENV: ${process.env.NODE_ENV}`);
+
+//2. This way returns 'development' by default if no enviroment is set. 
+//(Expired Code)
+// console.log(`app: ${app.get("env")}`);
+
+
+//NEW: Set logic to figure out current enviroment.
+//NOTE: If you want to change the encviroment variable for the deployment enviroment then
+//- use the same method in terminal for setting variables E.x -> 'export NODE_ENV=production'
+if(index.get('env') === 'development'){
+  index.use(morgan("tiny"));
+  console.log(`Deployment Enviroment: ${index.get('env')}`)
+  console.log('Morgan enabled...')
+}
+
 
 //Middlewares:
-
 //Built-in Express middlewares
 index.use(express.json());
 
@@ -18,11 +40,10 @@ index.use(express.urlencoded({ extended: true }));
 
 index.use(express.static("public"));
 
-//**NEW**: 
 //Third party middlewares.
 index.use(helmet());
 
-index.use(morgan('tiny'))
+
 
 //Custom middlewares.
 index.use(logger);
