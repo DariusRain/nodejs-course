@@ -13,7 +13,7 @@
 <div>
 <pre>
     Code: 
-    See comments -> [_branch:5-1@index.js_]('#')
+    See code & comments -> <a href="#">branch:4-1@index.js</a>
     Middleware is a function that takes the current request object being passed through 
     the <b>Request Processing Pipeline</b> and either returns the response object or 
     returns the next middleware function in the pipeline. 
