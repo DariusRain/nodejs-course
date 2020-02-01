@@ -40,9 +40,9 @@
 <hr>
 <div align="center" height="300px">
 <h1>Technologies Used</h2>
-<a href="https://nodejs.org/en/"><img width="25%" height="25%" src="https://cdn.freebiesupply.com/logos/large/2x/nodejs-1-logo-png-transparent.png"></a>
-<a href="https://www.npmjs.com/package/express"><img width="25%" height="25%" src="https://i.cloudup.com/zfY6lL7eFa-3000x3000.png"></a>
-<a href="https://www.mongodb.com/"><img width="25%" height="25%" src="https://icons-for-free.com/iconfiles/png/512/development+logo+mongodb+programming+icon-1320184807578986595.png"></a>
+<a href="https://nodejs.org/en/"><img width="90px" height="90px" src="https://cdn.freebiesupply.com/logos/large/2x/nodejs-1-logo-png-transparent.png"></a>
+<a href="https://www.npmjs.com/package/express"><img width="90px" height="90px" src="https://i.cloudup.com/zfY6lL7eFa-3000x3000.png"></a>
+<a href="https://www.mongodb.com/"><img width="90px" height="90px" src="https://icons-for-free.com/iconfiles/png/512/development+logo+mongodb+programming+icon-1320184807578986595.png"></a>
 
 </div>
 
