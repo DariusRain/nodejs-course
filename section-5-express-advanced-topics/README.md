@@ -35,10 +35,8 @@
     <br>
     Custom Middleware is commonly imported into a file.
     Examples:
-    <code>
      Export: 'module.exports = functionName' 
      Import: 'const variableImportVal = require('pathToFile');'
-     Middleware: 'app.use(variableImportVal);' ~ Same syntax for installed middleware from packages.
-    </code>
+     Middleware: 'app.use(variableImportVal);' ~Same syntax for installed middleware from packages.
     </pre>
 </div>
