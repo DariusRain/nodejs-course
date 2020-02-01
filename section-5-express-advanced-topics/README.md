@@ -100,14 +100,14 @@
     <pre>
     See code & comments -> <a href="https://github.com/DariusRain/nodejs-restful-apis/blob/5-4-third-party-middleware-vid-5/section-5-express-advanced-topics/index.js">branch:5-4@index.js</a>
     Third party middlewares I'm using:
-        <a href="#">Helmet</a>:
+        <a href="https://github.com/helmetjs/helmet">Helmet</a>:
             Used for securing application by setting HTTP headers.
             Command: 'npm i helmet'
             Code: 
                 'const hemlet = require('helmet');' ~ (Import package)
                 'app.use(helmet());' ~ (Use package as middleware)
         <br>
-        <a href="#">Morgan</a>:
+        <a href="http://expressjs.com/en/resources/middleware/morgan.html">Morgan</a>:
             Used to log HTTP requests in the console of the server.
             Command: 'npm i morgan'
             <br>
