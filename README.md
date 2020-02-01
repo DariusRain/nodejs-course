@@ -1,5 +1,5 @@
 <h2>Darius Rain <h2>
-<h2>Nodejs RESTful APIs Project</h2>
+<h2>Nodejs RESTful APIs</h2>
 <hr>
 
 <div>
@@ -12,7 +12,7 @@
   <br>
   <h3><a href="https://github.com/DariusRain/nodejs-course/tree/master/section-4-restful-api">Section 4</a>: RESTful APIs.</h3>
   <br>
-  <h3><a href="https://github.com/DariusRain/nodejs-course/tree/master/section-5-asynchronous-javascript">Section 5</a>: Express Advanced Topics</h3>
+  <h3><a href="https://github.com/DariusRain/nodejs-course/tree/master/section-5-express-advanced-topics">Section 5</a>: Express Advanced Topics</h3>
   <br>
   <h3><a href="#">Section 6</a>: Asynchronous Javascript</h3>
   <br>
@@ -39,7 +39,7 @@
 </div>
 <hr>
 <div height="300px">
-<h1>Technologies Used in course</h2>
+<h1>Technologies Used</h2>
 <a href="https://nodejs.org/en/"><img width="25%" height="25%" src="https://cdn.freebiesupply.com/logos/large/2x/nodejs-1-logo-png-transparent.png"></a>
 <a href="https://www.npmjs.com/package/express"><img width="25%" height="25%" src="https://i.cloudup.com/zfY6lL7eFa-3000x3000.png"></a>
 <a href="https://www.mongodb.com/"><img width="25%" height="25%" src="https://icons-for-free.com/iconfiles/png/512/development+logo+mongodb+programming+icon-1320184807578986595.png"></a>
