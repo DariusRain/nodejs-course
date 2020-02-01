@@ -38,7 +38,7 @@
 
 </div>
 <hr>
-<div height="300px">
+<div align="center" height="300px">
 <h1>Technologies Used</h2>
 <a href="https://nodejs.org/en/"><img width="25%" height="25%" src="https://cdn.freebiesupply.com/logos/large/2x/nodejs-1-logo-png-transparent.png"></a>
 <a href="https://www.npmjs.com/package/express"><img width="25%" height="25%" src="https://i.cloudup.com/zfY6lL7eFa-3000x3000.png"></a>
