@@ -3,33 +3,30 @@
 
 // Imports
 const express = require("express"),
-  logger = require("./logger");
-(index = express()), (Joi = require("@hapi/joi"));
+  logger = require("./logger"),
+  index = express(), 
+  Joi = require("@hapi/joi");
 
-//Middleware (Will explain later on.)
+//Middlewares:
+//**NEW**:
+//Built-in express middleware.
+//Parses a client's JSON payload
 index.use(express.json());
 
-//**NEW**: Custom Middleware
-//NOTE: Transfered it to external file called 'logger.js' for a matter of cleaner code.
-//use(): Is a route handler method that allows you to add custom & install middleware.
-//Syntax:
-//app.use(installedPackage.methodName())
-//app.use(() => {...})
-//app.use(importedFile)
+//Interprets an url encoded request from client
+index.use(express.urlencoded({ extended: true }));
+//{extended: true} is a required parameter for encoding complex arrays or objects.
 
-//Expired Code (See 'NOTE'):
-// index.use((req, res, next) => {
-//   console.log('Logging...')
+//Serves static folder on root to the client.
+index.use(express.static("public"));
+//NOTE: Created a directory called 'public' and added a file in it called 'readme.txt' to be served statically. (localhost:3000/readme.txt)
 
-//   next() //IMPORTANT: The middleware will keep buffering if you dont invoke the callback function 'next()' when you dont return the response object 'res'
-
-// })
-
-//New Code (See 'NOTE'):
-
+//Custom middlewares.
 index.use(logger);
 
-//Set an array of courses
+//Test Data:
+
+//Set an array of objects representing courses.
 const courses = [
   { id: 1, course: "course1" },
   { id: 2, course: "course2" },
@@ -98,13 +95,13 @@ index.post("/api/courses", (req, res) => {
   } else {
     //Log success to the server if the above conditional is false & the client message below.
     console.log(
-      `Suceess (#${++successCount}): Validated name: '${req.body.name}'`
+      `Suceess (#${++successCount}): Validated name: '${req.body.course}'`
     );
   }
 
   const course = {
     id: courses.length + 1,
-    name: req.body.name
+    course: req.body.course
   };
 
   courses.push(course);
