@@ -79,9 +79,11 @@
             <br>
         <a href="http://expressjs.com/en/api.html#express.static">express.static()</a>:
             Used to serve a static folder to the client, it needs a directory name as the first parameter,
-            then that folder will be served in the root '/' of the site and the contents of the folder will be static.
+            then that folder will be served in the root '/' of the site and the contents of the folder
+            will be static.
             <br>
-            Note: Scince the file will be served in the root of the site you will not see that directory name in the URL.
+            Note: Scince the file will be served in the root of the site you will not see that directory name
+            in the URL.
             Note: You dont generally serve static files in Node.js applications.
             <br>
             Static files are documents that are served to the client that do not change, meaning
