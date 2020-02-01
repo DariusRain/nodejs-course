@@ -127,8 +127,10 @@
     See code & comments -> <a href="https://github.com/DariusRain/nodejs-restful-apis/blob/5-5-enviroments-vid-6/section-5-express-advanced-topics/index.js">branch:5-5@index.js</a>
     Enviroments are categorized by names it could be a 'production' or 
     'development' enviroment. (There are more enviroments then those two).
-    The reason behind this is that you can set your appplication to execute
+    <br>
+    The reason behind this is that you can set your application to execute
     specific features based on the enviroment it is in.
+    <br>
     You can access the current type of enviroment in the 'process.env' 
     object with the property of 'NODE_ENV', or you can access 
     it this way 'app.get('env')'.
