@@ -1,7 +1,7 @@
 <div> 
 <h1>Section 5:</h1>
 <h1>Express Advanced Topics</h1>
- <div align="right" height="20px">
+ <div align="right" position="absolute" height="20px">
 <a href="https://www.npmjs.com/package/express"><img width="175px" src="https://i.cloudup.com/zfY6lL7eFa-3000x3000.png"></a>
 </div>
 <hr>
