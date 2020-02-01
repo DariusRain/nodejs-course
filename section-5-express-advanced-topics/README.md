@@ -11,14 +11,16 @@
 <h3>1) <a href="http://expressjs.com/en/guide/using-middleware.html">Middleware.</a></h3>
 <div>
 <pre>
-    Code: 
-    See code & comments -> <a href="#">branch:4-1@index.js</a>
-    Middleware is a function that takes the current request object being passed through 
-    the <a href="https://dzone.com/articles/understanding-middleware-pattern-in-expressjs">Request Processing Pipeline</a> and either returns the response object or 
-    returns the next middleware function in the pipeline. 
+    Middleware is a function that inherits the request object (A parameter) from the <a href="https://dzone.com/articles/understanding-middleware-pattern-in-expressjs">Request Processing Pipeline</a> and 
+    either returns the response object (A parameter) or returns the next middleware function in the pipeline.
+
+    All middleware functions takes 3 parameters the request object called 'req', response object called 'res' and a callback function called 'next()'. 
+    E.x: app.use((req, res, next) => {...}) or app.use(predefined-callback)  
     Note: The middleware can be used to make changes and or use the data from the request object. 
 </pre>
-<b align="center" >Request Processing Pipeline</b>
+<b align="center" >Request Processing Pipeline:</b>
 <br>
 <img align="center" src="https://vietcanho.files.wordpress.com/2016/06/middleware.png?w=1462">
+<br>
+
 </div>

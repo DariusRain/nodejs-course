@@ -1,5 +1,6 @@
 //Darius Rain
-//Index (v12.0.0) ~ Handling DELETE Requests
+//Section 5: Middleware
+//Index v0.0.14 ~ Changed from v13.0.0
 
 // Imported the express framework and invoked the value of it to the variable 'index'
 const express = require("express"),
@@ -128,37 +129,24 @@ index.put("/api/courses", (req, res) => {
   return true;
 });
 
-//**NEW**: Delete route.
-//The delete route reminds me of a get request including the find() method but just adding a splice or another method of deletion to it.
-index.delete('/api/courses/:id', (req, res) => {
-  //I assign a variable named 'id' the value of 'req.params.id' so I dont repeat that entire object.
-  //Parse it incase it was a string.
-  //Use & assign the value returned by the 'searchArrayFindById()' function. Returns the object if found, otherwise it returns false.
+index.delete("/api/courses/:id", (req, res) => {
+  const id = parseInt(req.params.id);
+  const found = searchArrayFindId(courses, id);
 
-const id = parseInt(req.params.id);
-const found = searchArrayFindId(courses, id);
+  if (!found) {
+    console.log(`DELETE (error:404): ~>Course ID#: ${id} Cannot be found<~`);
+    return res.status(404).send(`Error 404: Not Found \n Course ID#:${id}`);
+  }
 
-//This conditional depends if the value of the 'found' variable has a false value then it is true due to the logical NOT operator -> '!'. 
-if(!found){
-  console.log(`DELETE (error:404): ~>Course ID#: ${id} Cannot be found<~`)
-return res.status(404).send(`Error 404: Not Found \n Course ID#:${id}`)
-}
-//Code continues course if the above coditional is false.
+  //TEST found value
+  //console.log(courses.indexOf(found))
 
+  const deletedCourse = courses.splice(courses.indexOf(found), 1);
 
-//TEST found value
-//console.log(courses.indexOf(found))
-
-//Use the indexOf and splice core methods with the courses array then pass it the parameter of the found object.
-//The indexOf returns an index number location of that object.
-//In this case the splice method takes two parameters 1 starting with a index number (where to start deleting), -//- 2 ending with a index number (where to end deletion).
-
-const deletedCourse = courses.splice(courses.indexOf(found), 1);
-
-//Now log the results to the client and server.
-console.log(`DELETE (success:200): ~>Deleted Course ID#: ${id}<~`)
-return res.status(200).send(`Deleted course: \n ${deletedCourse}`)
-})
+  //Now log the results to the client and server.
+  console.log(`DELETE (success:200): ~>Deleted Course ID#: ${id}<~`);
+  return res.status(200).send(`Deleted course: \n ${deletedCourse}`);
+});
 
 const port = process.env.PORT || 3000;
 index.listen(port, () => {
