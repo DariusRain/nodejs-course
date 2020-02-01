@@ -2,10 +2,10 @@
   <br>
 Node.js Project</p>
 <div align="center" height="300px">
-<h1>Technologies:</h2>
-<a href="https://nodejs.org/en/"><img width="300px" height="300px" src="https://cdn.freebiesupply.com/logos/large/2x/nodejs-1-logo-png-transparent.png"></a>
-<a href="https://www.npmjs.com/papx" height="300px" src="https://i.cloudup.com/zfY6lL7eFa-3000x3000.png"></a>
-<a href="https://www.mongodb.com/"><img width="1s://icons-for-free.com/iconfiles/png/512/development+logo+mongodb+programming+icon-13201848075789
+<h1>Technologies Used in course</h2>
+<a href="https://nodejs.org/en/"><img width="300px" height="300px" src="https://cdn.freebiesupply.com/logos/large/2x/nodejs-1-logo-png-transparent.png"></a><p></p>
+<a href="https://www.npmjs.com/package/express"><img width="300px" height="300px" src="https://i.cloudup.com/zfY6lL7eFa-3000x3000.png"></a><p></p>
+<a href="https://www.mongodb.com/"><img width="300px" height="300px" src="https://icons-for-free.com/iconfiles/png/512/development+logo+mongodb+programming+icon-1320184807578986595.png"></a><p></p>
 
 </div>
 <hr>
