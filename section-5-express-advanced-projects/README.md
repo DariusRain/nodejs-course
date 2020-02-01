@@ -15,10 +15,11 @@
     Code: 
     See code & comments -> <a href="#">branch:4-1@index.js</a>
     Middleware is a function that takes the current request object being passed through 
-    the <b>Request Processing Pipeline</b> and either returns the response object or 
+    the <a href="">Request Processing Pipeline</a> and either returns the response object or 
     returns the next middleware function in the pipeline. 
     Note: The middleware can be used to make changes and or use the data from the request object. 
 
-
+    <b>Request Processing Pipeline</b>
 </pre>
+<img src="https://i.stack.imgur.com/hyTNj.png">
 </div>
