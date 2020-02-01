@@ -3,23 +3,26 @@
 
 // Imports
 const express = require("express"),
-  logger = require("./logger"),
-  index = express(), 
-  Joi = require("@hapi/joi");
+      logger = require("./logger"),
+      Joi = require("@hapi/joi"),
+      helmet = require('helmet'), //NEW --Thirdparty middleware for securing application.
+      morgan = require("morgan"), //NEW --Thirdparty middleware for logging HTTP requests
+      index = express();
 
 //Middlewares:
-//**NEW**:
-//Built-in express middleware.
-//Parses a client's JSON payload
+
+//Built-in Express middlewares
 index.use(express.json());
 
-//Interprets an url encoded request from client
 index.use(express.urlencoded({ extended: true }));
-//{extended: true} is a required parameter for encoding complex arrays or objects.
 
-//Serves static folder on root to the client.
 index.use(express.static("public"));
-//NOTE: Created a directory called 'public' and added a file in it called 'readme.txt' to be served statically. (localhost:3000/readme.txt)
+
+//**NEW**: 
+//Third party middlewares.
+index.use(helmet());
+
+index.use(morgan('tiny'))
 
 //Custom middlewares.
 index.use(logger);
