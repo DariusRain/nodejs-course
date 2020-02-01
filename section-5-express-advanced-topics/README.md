@@ -62,7 +62,7 @@
             Example:
             </pre>
             ```js
-                app.use(express.json()
+                app.use(express.json())
             ```
             <br>
         <pre>
