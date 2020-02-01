@@ -1,7 +1,7 @@
 <p>Darius Rain
   <br>
 Node.js Project</p>
-<div align="center" height="30px">
+<div align="center" height="70px">
 <h1>Technologies Used in course</h2>
 <a href="https://nodejs.org/en/"><img width="70px" src="https://cdn.freebiesupply.com/logos/large/2x/nodejs-1-logo-png-transparent.png"></a>
 <a href="https://www.npmjs.com/package/express"><img width="70px" src="https://i.cloudup.com/zfY6lL7eFa-3000x3000.png"></a>
