@@ -6,8 +6,8 @@
 <h1>Section 5. Express Advanced Topics</h1>
  <hr style="color: black;">
  </div>
-&npsb;
 
+&npsb;
 ### 1) Middleware.
     Code: <br>
     See comments -> [_branch:5-1@index.js_]('#')<br>
