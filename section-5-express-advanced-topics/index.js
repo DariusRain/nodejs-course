@@ -1,14 +1,33 @@
 //Darius Rain
-//Section 5: Middleware
-//Index v0.0.14 ~ Changed from v13.0.0
+//Section 5.2: Custom Middleware
 
-// Imported the express framework and invoked the value of it to the variable 'index'
+// Imports
 const express = require("express"),
-  index = express(),
-  Joi = require("@hapi/joi");
+  logger = require("./logger");
+(index = express()), (Joi = require("@hapi/joi"));
 
 //Middleware (Will explain later on.)
 index.use(express.json());
+
+//**NEW**: Custom Middleware
+//NOTE: Transfered it to external file called 'logger.js' for a matter of cleaner code.
+//use(): Is a route handler method that allows you to add custom & install middleware.
+//Syntax:
+//app.use(installedPackage.methodName())
+//app.use(() => {...})
+//app.use(importedFile)
+
+//Expired Code (See 'NOTE'):
+// index.use((req, res, next) => {
+//   console.log('Logging...')
+
+//   next() //IMPORTANT: The middleware will keep buffering if you dont invoke the callback function 'next()' when you dont return the response object 'res'
+
+// })
+
+//New Code (See 'NOTE'):
+
+index.use(logger);
 
 //Set an array of courses
 const courses = [

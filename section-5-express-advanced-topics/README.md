@@ -14,16 +14,31 @@
 <pre>
     Middleware is a function that inherits the request object (A parameter) from the <a href="https://dzone.com/articles/understanding-middleware-pattern-in-expressjs">Request Processing Pipeline</a>
     and either returns the response object (A parameter) or returns the next middleware function in the pipeline.
-
-    All middleware functions takes 3 parameters the request object called 'req',
-    response object called 'res' and a callback function called 'next()'.
-    E.x: app.use((req, res, next) => {...}) or app.use(predefined-callback)
-    Note: The middleware can be used to make changes and or use the data from the request object.
-
 </pre>
 <b align="center" >Request Processing Pipeline:</b>
 <br>
 <img align="center" src="https://vietcanho.files.wordpress.com/2016/06/middleware.png?w=1462">
 <br>
+</div>
 
+<br>
+
+<h3>2) Custom Middleware.</h3>
+<div>
+    <pre>
+    See code & comments-> <a href="https://github.com/DariusRain/nodejs-restful-apis/blob/5-2-custom-middleware-vid-3/section-5-express-advanced-topics/index.js">branch:5-2@index.js</a>
+    Custom middleware is when you add your own call back function as a parameter 
+    in the 'use()' route handler method.
+    <br>
+    All middleware functions takes 3 parameters the request object called 'req',
+    response object called 'res' and a callback function called 'next()'.
+    E.x: app.use((req, res, next) => {...}) or app.use(predefined-callback)
+    Note: The middleware can be used to make changes and or use the data from the request object.
+    <br>
+    Custom Middleware is commonly imported into a file.
+    Examples:
+     Export: 'module.exports = functionName' 
+     Import: 'const variableImportVal = require('pathToFile');'
+     Middleware: 'app.use(variableImportVal);' ~Same syntax for installed middleware from packages.
+    </pre>
 </div>
