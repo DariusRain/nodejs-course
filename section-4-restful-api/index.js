@@ -1,4 +1,4 @@
-// Imported the express framework and invoked the value of it to the variable 'index'
+// -Imported the express framework and invoked the value of it to the variable 'index'
 const express = require('express'),
 index = express();
 
