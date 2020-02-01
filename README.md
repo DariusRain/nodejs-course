@@ -1,5 +1,5 @@
-<h2>Darius Rain <h2>
-<h2>RESTful APIs</h2>
+<p>Darius Rain </p>
+<h2 align="center">RESTful APIs</h2>
 <hr>
 
 <div>
