@@ -1,6 +1,6 @@
 
 <div align="center" height="20px">
-<img width="175px" src="https://cdn.freebiesupply.com/logos/large/2x/nodejs-1-logo-png-transparent.png">
+<a href="https://www.npmjs.com/package/express"><img width="175px" src="https://i.cloudup.com/zfY6lL7eFa-3000x3000.png"></a>
 
 </div>
 <div align="center"> 
@@ -51,7 +51,7 @@ Command: npm i <package-name> <br>
 
 &nbsp;
 
-### [_1)_](https://youtu.be/pKd0Rpw7O48?t=410) Install npm package 'express'.
+### [_1)_](https://youtu.be/pKd0Rpw7O48?t=410) Install npm package '[_express_](https://www.npmjs.com/package/express)'.
 
 Command: npm i express <br>
 &nbsp;
@@ -69,7 +69,7 @@ Code: <br>
 
 &nbsp;
 
-### [_3)_](https://youtu.be/pKd0Rpw7O48?t=897) Install npm packge 'nodemon' (A dev dependency)
+### [_3)_](https://youtu.be/pKd0Rpw7O48?t=897) Install npm packge '[_nodemon_](https://www.npmjs.com/package/nodemon)' (A dev dependency)
 
 Command: npm i nodemon -D <br>
 &nbsp;
