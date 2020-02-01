@@ -49,7 +49,6 @@
 <div>
     <pre>
     See code & comments -> <a href="https://github.com/DariusRain/nodejs-restful-apis/blob/5-3-built-in-middleware-vid-4/section-5-express-advanced-topics/index.js">branch:5-3@index.js</a>
-    <br>
     Express built-in middlewares:
         <a href="http://expressjs.com/en/api.html#express.json">express.json()</a>:
             Parses JSON payloads from the 'request.body' when a client makes an HTTP request.
@@ -57,7 +56,7 @@
             Note: The 'request.body' can have the value of an empty 
             object if no input is recieved from the client.  
             <br>
-            The reason for this is for the rest of your route handlers to interpret 'request.body'
+            The reason for this is for the rest of your route handlers to interpret the 'request.body'
             object in a readable format for JavaScript code to handle.
             <br>
             Example:
