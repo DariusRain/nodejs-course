@@ -60,7 +60,7 @@
             object in a readable format for JavaScript code to handle.
             <br>
             Example:
-                app.use(express.json());
+                'app.use(express.json());'
             <br>
         <a href="http://expressjs.com/en/api.html#express.urlencoded">express.urlEncoded()</a>: 
             Interprets a URL Encoded payload from the client (ex: http//localhost:3000/key=value&key=value),
