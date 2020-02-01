@@ -177,6 +177,6 @@ Code: <br>
 
 Code: <br>
 &nbsp;
-//See comments here [_branch:4-12@index.js_](https://github.com/DariusRain/nodejs-restful-apis/tree/4-13-handling-delete-requests-52-33/section-4-restful-api/index.js)<br>
+//See comments here [_branch:4-13@index.js_](https://github.com/DariusRain/nodejs-restful-apis/tree/4-13-handling-delete-requests-52-33/section-4-restful-api/index.js)<br>
 //The DELETE request was alot like a GET request with route parameters but adding deletion logic - <br>
 //- after a value has been found and if false return a 404 status codeif value is not found.
