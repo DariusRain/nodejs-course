@@ -240,3 +240,17 @@
         created on top of the 'mongodb' package.
      </pre>
 </div>
+<br>
+
+<h3>10) Structring express applications.</h3>
+<div>
+    <pre>
+        Create a folder that stores routes and route name as individual files.
+            1: 'mkdir routes'
+            2: 'code routename1 routename2 ...'
+            3: Cut & Paste all routes by routename into the seprate files.
+            4: Ipmort express and use 'express.Router()' instead of 'express()'.
+            5: Export the value of 'express.Router()' & import it in the main route handler file.
+            6: After importing all the routes add the route path and the route value as middleware.
+     </pre>
+</div>
