@@ -121,7 +121,7 @@
     </pre>
 </div>
 
-<h3>5 <a href="https://en.wikipedia.org/wiki/Deployment_environment">Enviroments.</a></h3>
+<h3>5) <a href="https://en.wikipedia.org/wiki/Deployment_environment">Enviroments.</a></h3>
 <div>
     <pre>
     See code & comments -> <a href="https://github.com/DariusRain/nodejs-restful-apis/blob/5-5-enviroments-vid-6/section-5-express-advanced-topics/index.js">branch:5-5@index.js</a>
@@ -142,5 +142,51 @@
     <br> 
     Now boolean logic can figure out what enviroment your application is using.
     Now specific code can be executed varying on the enviroment value. 
+    </pre>
+</div>
+
+<h3>6) Configuration.</h3>
+<div>
+    <pre>
+    See configuration files -> <a href="https://github.com/DariusRain/nodejs-restful-apis/blob/5-5-configuration-vid-7/section-5-express-advanced-topics/index.js">branch:5-6@index.js</a>
+    Installed npm package: '<a href="https://npmjs.com/package/config">config</a>'
+        The config package allows you to modify/set configurations with JSON.
+        Each enviroment can be represented by its name then with a
+        json file extension (development.json, production.json)
+        <br>
+        Example:
+            1. Create Config directory & then a JSON file with the name of the enviroment. 
+            Create File: config/development.json (More files than below see configuration files.)
+                {
+                "name": "Application - Development",
+                "db": {
+                    "uri": "mongod://localhost:27017/express-app", 
+                    },
+                "mail": {
+                    "host":"123.254.21.32/90" 
+                    }
+                }
+                <br>
+            Create File: config/custom-enviroment-variables
+                {
+                "db": {
+                    "username":"secret_username", //Command: exports secret_username=username-here
+                    "password":"secret_password_db"
+                },
+                "mail": {
+                    "password":"secret_password_mail", 
+                }
+                }
+            <br>
+            2. Import the config package (If you didnt install: 'npm i config')
+                'const config = require('config')'
+            <br>
+            3. Log to the console the name of application, host and uri.
+                'console.log(`Name: ${config.name} \n Host: ${mail.host} \n DB: ${db.uri}`)'
+            <br>
+            4. Set secret enviroment variables in terminal then test run the node application
+            'nodemon app.js'
+        <br>
+        Now you can use this through out your code. Even adding other configurations and variable. 
     </pre>
 </div>
