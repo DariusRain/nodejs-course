@@ -89,9 +89,7 @@
             that there is no server-side code creating new files on the fly.
             <br>
             Example:
-                "```
-                app.use(express.static('directory-name'))
-                ```"
+                'app.use(express.static('directory-name'))'
     </pre>
 </div>
     
