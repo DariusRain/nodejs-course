@@ -121,27 +121,28 @@
     </pre>
 </div>
 
-<h3>5) <a href="https://en.wikipedia.org/wiki/Deployment_environment">Enviroments.</a></h3>
+<h3>5) <a href="https://en.wikipedia.org/wiki/Deployment_environment">Deployment Enviroments.</a></h3>
 <div>
     <pre>
     See code & comments -> <a href="https://github.com/DariusRain/nodejs-restful-apis/blob/5-5-enviroments-vid-6/section-5-express-advanced-topics/index.js">branch:5-5@index.js</a>
-    Enviroments are categorized by names it could be a 'production' or 
+    Deployment enviroments are categorized by names it could be a 'production' or 
     'development' enviroment. (There are more enviroments then those two).
     <br>
     The reason behind this is that you can set your application to execute
     specific features based on the enviroment it is in.
     <br>
-    You can access the current type of enviroment in the 'process.env' 
+    You can access the current type of deployment enviroment in the 'process.env' 
     object with the property of 'NODE_ENV', or you can access 
     it this way 'app.get('env')'.
     Both should return a string representing the current enviroment your application is running in.
     <br>
     Examples:
         'process.env.NODE_ENV' 
-        (Returns 'undefined' by default if no value is added in the terminal)
+        (Returns 'undefined' by default if no enviroment variable is set in the terminal)
+        Command to set the name of deployment enviroment'export NODE_ENV=development'
         <br>
         'app.get('env')' 
-        (Returns 'development' by default if no value is set in terminal)
+        (Returns 'development' by default if no  is set in terminal)
     <br> 
     Now boolean logic can figure out what enviroment your application is using.
     Now specific code can be executed varying on the enviroment value. 
@@ -151,7 +152,7 @@
 <h3>6) Configuration.</h3>
 <div>
     <pre>
-    See configuration files -> <a href="https://github.com/DariusRain/nodejs-restful-apis/tree/5-6-configuration-vid-7/section-5-express-advanced-topics/config">branch:5-6@index.js</a>
+    See configuration files -> <a href="https://github.com/DariusRain/nodejs-restful-apis/tree/5-6-configuration-vid-7/section-5-express-advanced-topics/config">branch:5-6@config/</a>
     Installed npm package: '<a href="https://npmjs.com/package/config">config</a>'
         The config package allows you to modify/set configurations with JSON.
         Each enviroment can be represented by its name then with a
@@ -181,15 +182,47 @@
                 }
                 }
             <br>
-            2. Import the config package (If you didnt install: 'npm i config')
+            2: Import the config package (If you didnt install: 'npm i config')
                 'const config = require('config')'
             <br>
-            3. Log to the console the name of application, host and uri.
+            3: Log to the console the name of application, host and uri.
                 'console.log(`Name: ${config.name} \n Host: ${mail.host} \n DB: ${db.uri}`)'
             <br>
-            4. Set secret enviroment variables in terminal then test run the node application
+            4: Set secret enviroment variables in terminal then test run the node application
             'nodemon app.js'
         <br>
         Now you can use this through out your code. Even adding other configurations and variable. 
+    </pre>
+</div>
+<br>
+<h3>7) Debugging.</h3>
+<div>
+    <pre>
+        See code & comments -> <a href="https://github.com/DariusRain/nodejs-restful-apis/tree/5-7-debugging-vid-8/section-5-express-advanced-topics/index.js">branch:5-6@index.js</a>
+        <br>
+            The reason for installing the 'debug' package is so that you can log messages in certain
+            area(s) in your code, based on the value you set the 'DEBUG' variable in your terminal. 
+            So this package frees you from having to manually delete, comment or add code that 
+            logs to the console all by configuring values in the enviroment. 
+        <br> 
+        1: Install npm package '<a href="https://www.npmjs.com/package/debug">debug</a>'.
+            'npm i debug'
+            <br>
+        2: Import it in the main file 'app.js' or 'index.js' whatever the name is.
+            'const debug = require('debug')('app:start')'
+            'const debug2 = require('debug')('app:db')'
+         You can now use one to log for normal stuff and the other to log the database status,
+            or other misc. tasks you want to see the status too also.
+            <br>
+        3: Add the debug logger throughout the code where you would like to log messages.
+            'debug('Put log Message here')' ~ Normal logging
+            'devug2('Put log message here') ~ For logging messagess
+            <br>
+        4: Go to dirtectory of the application in terminal
+            Command: 'export DEBUG=app:start'
+            <br>
+         This now activates log messages only to be made by the variable you assigned the
+         value of 'app:start' too (See step 2). In my case it will only log messages with
+         the syntax 'debug()' and not 'debug2()'.
     </pre>
 </div>
