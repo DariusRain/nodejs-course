@@ -1,0 +1,10 @@
+{
+    "name": "Express App - Production",
+    "db": {
+        "uri": "mongod://127.0.0.1:27107/express-app"
+    },
+    "mail": {
+        "host": "153.43.21.2"
+    }
+
+}

@@ -5,26 +5,17 @@
 const express = require("express"),
   logger = require("./logger"),
   Joi = require("@hapi/joi"),
-  helmet = require("helmet"), //NEW --Thirdparty middleware for securing application.
-  morgan = require("morgan"), //NEW --Thirdparty middleware for logging HTTP requests
+  config = require('config'),
+  helmet = require("helmet"),
+  morgan = require("morgan"),
   index = express();
 
-//**NEW**:
-//Check and handle deployment enviroment
-//Two ways of seeing current enviroment
-
-//1. This way returns 'undefined' by default if no enviroment is set. 
-//(Expired Code)
-// console.log(`NODE_ENV: ${process.env.NODE_ENV}`);
-
-//2. This way returns 'development' by default if no enviroment is set. 
-//(Expired Code)
-// console.log(`app: ${app.get("env")}`);
+//NEW: Can access the configuration json files in the config dirctory
+//The value is all based on the enviroment variables you set.
+//Just an example dont have Mail-Host server or Database configured yet. (Dont worry about it yet)
+console.log(`Application: ${config.get('name')} \n Host: ${config.get('mail.host')} \n DB: ${config.get('db.uri')}`)
 
 
-//NEW: Set logic to figure out current enviroment.
-//NOTE: If you want to change the encviroment variable for the deployment enviroment then
-//- use the same method in terminal for setting variables E.x -> 'export NODE_ENV=production'
 if(index.get('env') === 'development'){
   index.use(morgan("tiny"));
   console.log(`Deployment Enviroment: ${index.get('env')}`)
