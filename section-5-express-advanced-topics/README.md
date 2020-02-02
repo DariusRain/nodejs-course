@@ -227,7 +227,7 @@
     </pre>
 </div>
 <br>
-<h3>8) Templating engines. (Not using unless needed. Used to using HTML</h3>
+<h3>8) Templating engines. (Using HTML unless needed.)</h3>
 <div>
     <pre>
         Templating engines are a subsitute for writing html code with less use of charachters.
@@ -238,6 +238,5 @@
         <a href="http://handlebarsjs.com/">Handlebars</a>
         <a href="https://pugjs.org/api/getting-started.html">Pug</a>
         <br>
-        I 
     </pre>
 </div>
