@@ -198,7 +198,7 @@
 <h3>7) Debugging.</h3>
 <div>
     <pre>
-        See code & comments -> <a href="https://github.com/DariusRain/nodejs-restful-apis/tree/5-7-debugging-vid-8/section-5-express-advanced-topics/index.js">branch:5-6@index.js</a>
+        See code & comments -> <a href="https://github.com/DariusRain/nodejs-restful-apis/tree/5-7-debugging-vid-8/section-5-express-advanced-topics/index.js">branch:5-7@index.js</a>
         <br>
             The reason for installing the 'debug' package is so that you can log messages in certain
             area(s) in your code, based on the value you set the 'DEBUG' variable in your terminal. 
