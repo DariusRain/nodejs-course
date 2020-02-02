@@ -1,27 +1,38 @@
 //Darius Rain
 //Section 5.2: Custom Middleware
 
+
+
 // Imports
 const express = require("express"),
   logger = require("./logger"),
   Joi = require("@hapi/joi"),
-  config = require('config'),
+  config = require("config"),
   helmet = require("helmet"),
   morgan = require("morgan"),
   index = express();
 
-//NEW: Can access the configuration json files in the config dirctory
-//The value is all based on the enviroment variables you set.
-//Just an example dont have Mail-Host server or Database configured yet. (Dont worry about it yet)
-console.log(`Application: ${config.get('name')} \n Host: ${config.get('mail.host')} \n DB: ${config.get('db.uri')}`)
+//**NEW**:
+//Debug log variables:
+const debug = require("debug")("app:start");
+const debugdb = require("debug")("app:db");
 
+//NEW:
+//When enviroment variable DEBUG=app:start everything with debug() will be logged
+debug(
+  `Application: ${config.get("name")} \n Host: ${config.get("mail.host")}`
+);
+console.log(debug.color)
+//NEW:
+//When enviroment variable DEBUG=app:db everything with debugdb() will be logged
+debugdb(`\n Connected to database \n
+DB: ${config.get("db.uri")}`)
 
-if(index.get('env') === 'development'){
+if (index.get("env") === "development") {
   index.use(morgan("tiny"));
-  console.log(`Deployment Enviroment: ${index.get('env')}`)
-  console.log('Morgan enabled...')
+  //debug(`Deployment Enviroment: ${index.get("env")}`);
+  debug("Morgan enabled...");
 }
-
 
 //Middlewares:
 //Built-in Express middlewares
@@ -33,8 +44,6 @@ index.use(express.static("public"));
 
 //Third party middlewares.
 index.use(helmet());
-
-
 
 //Custom middlewares.
 index.use(logger);
