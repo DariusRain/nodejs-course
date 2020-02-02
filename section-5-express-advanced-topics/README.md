@@ -226,3 +226,18 @@
          the syntax 'debug()' and not 'debug2()'.
     </pre>
 </div>
+<br>
+<h3>8) Templating engines. (Not using unless needed. Used to using HTML</h3>
+<div>
+    <pre>
+        Templating engines are a subsitute for writing html code with less use of charachters.
+        Common templating engines to use: 
+        <a href="https://github.com/janl/mustache.js">Mustache</a>
+        <a href="http://underscorejs.org/">Underscorejs</a>
+        <a href="http://embeddedjs.com/">EJS</a>
+        <a href="http://handlebarsjs.com/">Handlebars</a>
+        <a href="https://pugjs.org/api/getting-started.html">Pug</a>
+        <br>
+        I 
+    </pre>
+</div>
