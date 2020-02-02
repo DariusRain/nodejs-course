@@ -224,18 +224,19 @@
     </pre>
 </div>
 <br>
-<h3>8) Templating engines. (Using HTML unless needed.</h3>
+<h3>8) <a href="https://expressjs.com/en/resources/template-engines.html">Templating engines in express.</a> (Using HTML unless needed.)</h3>
 <div>
     <pre>
         Templating engines are a subsitute for writing html code with less use of charachters.
-        Common templating engines to use: 
-        <a href="https://github.com/janl/mustache.js">Mustache</a>
-        <a href="http://underscorejs.org/">Underscorejs</a>
-        <a href="http://embeddedjs.com/">EJS</a>
-        <a href="http://handlebarsjs.com/">Handlebars</a>
-        <a href="https://pugjs.org/api/getting-started.html">Pug</a>
-        <br>
     </pre>
 </div>
 <br>
-<h3>9) Database integration.</h3>
+<h3>9) <a href="http://expressjs.com/en/guide/database-integration.html#database-integration">Database integration.</a></h3>
+<div>
+    <pre>
+        Express has drivers that you can install to work with your database of choice.
+        For MongoDB you install driver 'mongodb'.
+        Another one is 'mongoose' which is
+        created on top of the 'MongoDB' package.
+     </pre>
+</div>
