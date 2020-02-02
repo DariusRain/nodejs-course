@@ -148,7 +148,7 @@
 <h3>6) Configuration.</h3>
 <div>
     <pre>
-    See configuration files -> <a href="https://github.com/DariusRain/nodejs-restful-apis/blob/5-5-configuration-vid-7/section-5-express-advanced-topics/index.js">branch:5-6@index.js</a>
+    See configuration files -> <a href="https://github.com/DariusRain/nodejs-restful-apis/tree/5-6-configuration-vid-7/section-5-express-advanced-topics/config">branch:5-6@index.js</a>
     Installed npm package: '<a href="https://npmjs.com/package/config">config</a>'
         The config package allows you to modify/set configurations with JSON.
         Each enviroment can be represented by its name then with a
