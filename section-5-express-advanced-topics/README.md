@@ -237,6 +237,6 @@
         Express has drivers that you can install to work with your database of choice.
         For MongoDB you install driver 'mongodb'.
         Another one is 'mongoose' which is
-        created on top of the 'MongoDB' package.
+        created on top of the 'mongodb' package.
      </pre>
 </div>
