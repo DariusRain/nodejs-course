@@ -1,13 +1,10 @@
-<div align="center"> 
- <div height="20px">
-<a href="https://www.npmjs.com/package/express"><img width="175px" src="https://i.cloudup.com/zfY6lL7eFa-3000x3000.png"></a>
-</div>
-<h1>Section 5:</h1>
-<h1>Express Advanced Topics</h1>
-<hr>
- </div>
 
-<br>
+<p>
+ Darius Rain <br>
+ Section 5: Express Advanced Topics
+</p>
+
+<hr>
 
 <h3>1) <a href="http://expressjs.com/en/guide/using-middleware.html">Middleware.</a></h3>
 <div>
