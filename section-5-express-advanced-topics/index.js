@@ -12,19 +12,20 @@ const express = require("express"),
   morgan = require("morgan"),
   index = express();
 
-//**NEW**:
 //Debug log variables:
 const debug = require("debug")("app:start");
 const debugdb = require("debug")("app:db");
 
-//NEW:
-//When enviroment variable DEBUG=app:start everything with debug() will be logged
+//NEW: Use express.set() to the key 'view engine' to a value of 'pug'
+
+index.set('view engine', 'pug');
+
+
 debug(
   `Application: ${config.get("name")} \n Host: ${config.get("mail.host")}`
 );
 console.log(debug.color)
-//NEW:
-//When enviroment variable DEBUG=app:db everything with debugdb() will be logged
+
 debugdb(`\n Connected to database \n
 DB: ${config.get("db.uri")}`)
 
@@ -62,8 +63,13 @@ let errorCount = 0,
 //Routes:
 
 //Get requests.
+
+//NEW: Pug
 index.get("/", (req, res) => {
-  res.send("Hello World");
+  res.render('index', {
+    title: 'My express app',
+    message: 'Hello Worlds'
+  })
 });
 
 index.get("/api/courses", (req, res) => {
