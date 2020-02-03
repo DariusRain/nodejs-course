@@ -7,7 +7,7 @@ Section 6: Asynchrounous Javascript
 <h3>1) Synchronous Vs Asynchronous.</h3>
 <div>
     <pre>
-    See example <a href="">branch:6-1@async-demo</a>
+    See example <a href="https://github.com/DariusRain/nodejs-restful-apis/blob/master/section-6-asynchronous-javascript/async-demo/index.js">branch:6-1@async-demo</a>
     Synchronous: 
         When code is executed synchronously it is in order
         of line by line. So even when timeful events occur 
