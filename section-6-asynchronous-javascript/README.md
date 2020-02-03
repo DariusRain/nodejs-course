@@ -3,6 +3,7 @@ Darius Rain <br>
 Section 6: Asynchrounous Javascript
 </p>
 <hr>
+<br>
 <h3>1) Synchronous Vs Asynchronous.</h3>
 <div>
     <pre>
