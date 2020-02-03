@@ -13,7 +13,7 @@
   <br>
   <h5>(✔) <a href="https://github.com/DariusRain/nodejs-course/tree/master/section-4-restful-api">Section 4</a>: RESTful APIs. </h5>
   <br>
-  <h5>() <a href="https://github.com/DariusRain/nodejs-course/tree/master/section-5-express-advanced-topics">Section 5</a>: Express Advanced Topics (Current) </h5>
+  <h5>(✔) <a href="https://github.com/DariusRain/nodejs-course/tree/master/section-5-express-advanced-topics">Section 5</a>: Express Advanced Topics (Current) </h5>
   <br>
   <h5>(📝) <a href="#">Section 6</a>: Asynchronous Javascript </h5>
   <br>
