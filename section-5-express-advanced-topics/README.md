@@ -241,7 +241,8 @@
                 command: 'code view/index.pug' 
                 or 'mkdir view && cd view && touch index.pug' 
             -You can invoke your editor the same as using 'code' for VScode
-            -just figure out the name that invokes that most editors have them. (Normally the name or shortened version)
+            -just figure out the name that invokes that most editors have them. 
+             Normally the name or a shortened version of the name. 
             <br>
             4: Code in pug format to get the basics.
                 code: See <a href="#">branch:5-8@view/index.pug</a>.
