@@ -15,7 +15,7 @@
   <br>
   <h5>(📝) <a href="https://github.com/DariusRain/nodejs-course/tree/master/section-5-express-advanced-topics">Section 5</a>: Express Advanced Topics (Current) </h5>
   <br>
-  <h5>(✖) <a href="#">Section 6</a>: Asynchronous Javascript </h5>
+  <h5>(✖) <a href="https://github.com/DariusRain/nodejs-course/tree/master/section-6-asynchrounous-javascript">Section 6</a>: Asynchronous Javascript </h5>
   <br>
   <h5>(✖) <a href="#">Section 7</a>: CRUD Operations Using MongoDB </h5>
   <br>
