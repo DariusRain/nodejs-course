@@ -223,16 +223,36 @@
     </pre>
 </div>
 <br>
-<h3>8) <a href="https://expressjs.com/en/resources/template-engines.html">Templating engines in express.</a> (Using HTML unless needed.)</h3>
+<h3>8) <a href="https://expressjs.com/en/resources/template-engines.html">Templating engines in express.</a></h3>
 <div>
     <pre>
         Templating engines are a subsitute for writing html code with less use of charachters.
+        I will be using <a href="https://www.npmjs.com/package/pug">pug</a> in this example in
+        the view directory.
+            <br>
+            1: Install pug
+                Command: 'npm i pug'
+            <br>
+            2: Set 'view engine' to the value of 'pug'. 
+                code: See <a href="#">branch:5-10@index.js</a>.
+                syntax: See <a href="http://expressjs.com/en/4x/api.html#app.set">express.set()</a>
+            <br>
+            3: Create a directory for the view engine which will contain files with '.pug'.
+                command: 'code view/index.pug' 
+                or 'mkdir view && cd view && touch index.pug' 
+            -You can invoke your editor the same as using 'code' for VScode
+            -just figure out the name that invokes that most editors have them. (Normally the name or shortened version)
+            <br>
+            4: Code in pug format to get the basics.
+                code: See <a href="#">branch:5-8@view/index.pug</a>.
+            <br>
     </pre>
 </div>
 <br>
 <h3>9) <a href="http://expressjs.com/en/guide/database-integration.html#database-integration">Database integration.</a></h3>
 <div>
     <pre>
+    (Will cover in later sections)
         Express has drivers that you can install to work with your database of choice.
         For MongoDB you install driver 'mongodb'.
         Another one is 'mongoose' which is
@@ -253,6 +273,6 @@
             4: Ipmort express and use 'express.Router()' instead of 'express()'.
             5: Export the value of 'express.Router()' & import it in the main route handler file.
             6: After importing all the routes add the route path and the route value as middleware.
+            7: Then do the same for home route '/'.
      </pre>
-
 </div>
