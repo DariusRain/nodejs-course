@@ -244,7 +244,7 @@
 <h3>10) Structring express applications.</h3>
 <div>
     <pre>
-    See code & comments -> <a href="https://github.com/DariusRain/nodejs-restful-apis/tree/5-10-structuring-express-applications-vid-12/section-5-express-advanced-topics/index.js">branch:5-10@index.js</a>
+    See code & comments -> <a href="https://github.com/DariusRain/nodejs-restful-apis/blob/5-10-structuring-express-application-vid-12/section-5-express-advanced-topics/index.js">branch:5-10@index.js</a>
     <br>
         Create a folder that stores routes and route name as individual files.
             1: 'mkdir routes'
