@@ -39,3 +39,23 @@ Section 6: Asynchrounous Javascript
         See example of why we need these methods -> <a href="https://github.com/DariusRain/nodejs-restful-apis/blob/6-2-asynchronous-patterns-vid-2/section-6-asynchronous-javascript/README.md">branch:6-2@index.js</a>
     </pre>
 </div>
+<br>
+<h3>3) Callbacks.</h3>
+<div>
+    <pre>
+        Callbacks are functions added as parameters to functions.
+        Callbacks can be predefined then passed as a parameter or
+        on the spot with anonymous functions -> '() => {...}'.
+        <br>
+            Example:
+                function getUser(id, callback) {
+                    //Statements handling 'passedValueOfUser'
+                    callback(passedValueOfUser)
+                }
+                getUser(3, (user) => console.log('User:' + user)) //user = passedValueOfUser
+        <br>
+        In asynchronous javascript you use callbacks as parameters
+        to log or execute values once the asynchronous operation is
+        complete, so values dont turn out to be 'undefined'.
+    </pre>
+</div>
