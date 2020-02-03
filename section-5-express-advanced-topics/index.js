@@ -1,7 +1,5 @@
 //Darius Rain
-//Section 5.7: Debugging
-
-
+//Section 5.10: Structuring Express Application.
 
 // Imports
 const express = require("express"),
@@ -10,28 +8,22 @@ const express = require("express"),
   config = require("config"),
   helmet = require("helmet"),
   morgan = require("morgan"),
+  //NEW: Added external routes check the file paths below.
   coursesRoute = require("./routes/courses"),
+  rootRoute = require('./routes/home'),
   index = express();
 
-const debug = require("debug")("app:start");
-const debugdb = require("debug")("app:db");
+  //Debugging 
+  const debug = require("debug")("app:start");
+  const debugdb = require("debug")("app:db");
 
-debug(
-  `Application: ${config.get("name")} \n Host: ${config.get("mail.host")}`
-);
-console.log(debug.color)
+  debug(`Application: ${config.get("name")} \n Host: ${config.get("mail.host")}`);
+  debugdb(`Connected to database \n DB: ${config.get("db.uri")}`);
 
-debugdb(`\n Connected to database \n
-DB: ${config.get("db.uri")}`)
-
-if (index.get("env") === "development") {
+  if (index.get("env") === "development") {
   index.use(morgan("tiny"));
-
   debug("Morgan enabled...");
 }
-
-
-
 
 //Middlewares:
 //Built-in Express middlewares
@@ -41,28 +33,11 @@ index.use(express.urlencoded({ extended: true }));
 
 index.use(express.static("public"));
 
-//NEW: External routes middleware 
-index.use("/api/courses", coursesRoute)
+//NEW: External routes middleware
+index.use("/api/courses", coursesRoute);
+index.use("/", rootRoute);
 
-
-//Third party middlewares.
-index.use(helmet());
-
-//Custom middlewares.
-index.use(logger);
-
-
-
-
-
-//Test Data:
-
-
-//Root Route:
-index.get("/", (req, res) => {
-  res.send("Root Route");
-});
-
+//Set Port to listen on
 const port = process.env.PORT || 3000;
 
 index.listen(port, () => {
