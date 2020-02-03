@@ -1,13 +1,9 @@
 
-<div align="center" height="20px">
-<a href="https://www.npmjs.com/package/express"><img width="175px" src="https://i.cloudup.com/zfY6lL7eFa-3000x3000.png"></a>
-
-</div>
-<div align="center"> 
-<h1>Section 4. Building RESTful APIs Using Express</h1>
- <hr style="color: black;">
- </div>
-
+<p>
+Darius Rain
+Section 4: RESTful APIs
+</p>
+<hr>
 
 ### What is REST or RESTful API?<br>
 
