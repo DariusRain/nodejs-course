@@ -1,19 +1,22 @@
 //Darius Rain
-//File: index.js (Async and sync example)
+//File: index.js (More Real Example)
 
-//Synchronous:
-console.log('Synchronous execution: \n')
-console.log('Before') //First Line Gets executed 
-console.log('Fetching github user') // Then this line
-console.log('After') // Then this line
+//In this example it shows why callbeacks, promises or async and await is used
+//in asynchronous operations.
 
 
-//setTimeout calls a block of code in set amount of time 'setTimeout(callback, milliseconds)'
-//Using setTimeout the behavior of asynchrpnous code.
-setTimeout(() => {
-console.log('\n Asycnchronous execution: \n')
 //Asynchronous:
-console.log('Before') //First Line Gets executed 
-setTimeout(() => console.log('Fetching github user'), 2000) // This line gets executed after 2 seconds (2000 ms)
-setTimeout(() => console.log('After'), 3000) // This line gets executed after 3 seconds (3000 ms)
-}, 1000)
+console.log('Before')
+console.log('Fetching github user') 
+const user = getUserId(1);
+console.log(user)
+console.log('After') 
+console.log('User is undefined becuase ther was no code set to \n handle the asynchronous event \n "setTimeOut()" just executes code in a given set time.')
+function getUserId(id) {
+    setTimeout(() =>
+    { 
+        //console.log('Fetching github user') // This line gets executed after 2 seconds (2000 ms)
+        return {userId: id, gitHubUserName: 'DariusRain'}
+    }, 2000)
+
+}
