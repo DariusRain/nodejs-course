@@ -1,4 +1,3 @@
-
 <p>
  Darius Rain <br>
  Section 5: Express Advanced Topics
@@ -245,6 +244,8 @@
 <h3>10) Structring express applications.</h3>
 <div>
     <pre>
+    See code & comments -> <a href="https://github.com/DariusRain/nodejs-restful-apis/tree/5-10-structuring-express-applications-vid-12/section-5-express-advanced-topics/index.js">branch:5-10@index.js</a>
+    <br>
         Create a folder that stores routes and route name as individual files.
             1: 'mkdir routes'
             2: 'code routename1 routename2 ...'
@@ -253,4 +254,5 @@
             5: Export the value of 'express.Router()' & import it in the main route handler file.
             6: After importing all the routes add the route path and the route value as middleware.
      </pre>
+
 </div>
