@@ -234,7 +234,7 @@
                 Command: 'npm i pug'
             <br>
             2: Set 'view engine' to the value of 'pug'. 
-                code: See <a href="#">branch:5-10@index.js</a>.
+                code: See <a href="https://github.com/DariusRain/nodejs-restful-apis/blob/5-8-templating-engines-vid-9/section-5-express-advanced-topics/index.js">branch:5-10@index.js</a>.
                 syntax: See <a href="http://expressjs.com/en/4x/api.html#app.set">express.set()</a>
             <br>
             3: Create a directory for the view engine which will contain files with '.pug'.
@@ -244,7 +244,7 @@
             -just figure out the name that invokes that most editors have them. (Normally the name or shortened version)
             <br>
             4: Code in pug format to get the basics.
-                code: See <a href="#">branch:5-8@view/index.pug</a>.
+                code: See <a href="https://github.com/DariusRain/nodejs-restful-apis/blob/5-8-templating-engines-vid-9/section-5-express-advanced-topics/views/index.pug">branch:5-8@view/index.pug</a>.
             <br>
             Then test application on browser.
     </pre>
