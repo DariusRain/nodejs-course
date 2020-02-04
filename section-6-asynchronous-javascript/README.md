@@ -72,8 +72,15 @@ Section 6: Asynchrounous Javascript
                    resolve(1);
                    reject(new Error('message'));
                })
-               promise
-                .then(result => console.log('Result:', result))
-                .catch(error => console.log('Error:', error.message))
+                promise
+                    .then(result => console.log('Result:', result))
+                    .catch(error => console.log('Error:', error.message))
+    </pre>
+</div>
+<h3>5) Converting callbacks into promises.</h3>
+<div>
+    <pre>
+        Convert the callbacks (section 3).
+        See code <a href="#">branch:6-5@async-demo/index.js</a>
     </pre>
 </div>
