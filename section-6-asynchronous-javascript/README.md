@@ -60,6 +60,7 @@ Section 6: Asynchrounous Javascript
         complete, so values dont turn out to be 'undefined'.
     </pre>
 </div>
+<br>
 <h3>4) Promises.</h3>
 <div>
     <pre>
@@ -77,10 +78,11 @@ Section 6: Asynchrounous Javascript
                     .catch(error => console.log('Error:', error.message))
     </pre>
 </div>
+<br>
 <h3>5) Converting callbacks into promises.</h3>
 <div>
     <pre>
         Convert the callbacks (section 3).
-        See code <a href="#">branch:6-5@async-demo/index.js</a>
+        See code <a href="https://github.com/DariusRain/nodejs-restful-apis/blob/6-5-replacing-callbacks-w-promises-vid-7/section-6-asynchronous-javascript/async-demo/index.js">branch:6-5@async-demo/index.js</a>
     </pre>
 </div>
