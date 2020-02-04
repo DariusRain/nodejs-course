@@ -43,6 +43,7 @@ Section 6: Asynchrounous Javascript
 <h3>3) Callbacks.</h3>
 <div>
     <pre>
+        See code & comments <a href="https://github.com/DariusRain/nodejs-restful-apis/blob/6-3-callbacks-vid-3/section-6-asynchronous-javascript/async-demo/index.js">branch:6-3@async-demo/inddex.js</a>
         Callbacks are functions added as parameters to functions.
         Callbacks can be predefined then passed as a parameter or
         on the spot with anonymous functions -> '() => {...}'.
@@ -57,5 +58,22 @@ Section 6: Asynchrounous Javascript
         In asynchronous javascript you use callbacks as parameters
         to log or execute values once the asynchronous operation is
         complete, so values dont turn out to be 'undefined'.
+    </pre>
+</div>
+<h3>4) Promises.</h3>
+<div>
+    <pre>
+        Promises are ar used to hold the value of a pending asynchronous operation
+        Promises respond with either a 'resolve()' or 
+        'reject()' callback function's value.    
+        <br>
+            Example:
+               const promise = new Promise((resolve, reject) => {
+                   resolve(1);
+                   reject(new Error('message'));
+               })
+               promise
+                .then(result => console.log('Result:', result))
+                .catch(error => console.log('Error:', error.message))
     </pre>
 </div>
