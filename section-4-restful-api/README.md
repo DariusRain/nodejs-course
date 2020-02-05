@@ -1,7 +1,7 @@
 
 <p>
 Darius Rain <br>
-Section 4: RESTful APIs
+RESTful APIs
 </p>
 <hr>
 
