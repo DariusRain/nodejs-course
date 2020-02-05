@@ -1,6 +1,6 @@
 <p>
  Darius Rain <br>
- Section 5: Express Advanced Topics
+Express Advanced Topics
 </p>
 
 <hr>
