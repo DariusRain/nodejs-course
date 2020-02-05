@@ -1,6 +1,6 @@
 <p>
 Darius Rain <br>
-Section 6: Asynchrounous Javascript
+Asynchrounous Javascript
 </p>
 <hr>
 <br>
