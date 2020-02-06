@@ -90,10 +90,14 @@ Asynchrounous Javascript
 <h3>6)<a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await">async & await</a> with <a hrerf="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch">try & catch</a></h3>
 <div>
     <pre>
-        Async and await are only necessary to use when an asynchronous task is happening, so try and catch can be used at any time.
-        Try and catch is handy to handle potential errors that may occur in the try block. It is similar ti .then and .catch but the diference is
-        you can add the code in try and catch block rather than chaining '.then().then().catch()' you can just write try {...} catch (err) {...}.
+        Async and await are only necessary to use when an asynchronous task is happening, so try and catch
+        can be used at any time.
+        Try and catch is handy to handle potential errors that may occur in the try block. It is similar
+        to .then and .catch but the diference is
+        you can add the code in try and catch block rather than chaining '.then().then().catch()' you 
+        can just write try {...} catch (err) {...}.
         The try block executes first in a try catch statement and executes the cathc block if a error occurs. 
-        Try and catch also comes with a finally syntax, all that does is execute the code within its block no matter if an error is thrown ir not.
+        Try and catch also comes with a finally syntax, all that does is execute the code within its block no matter
+        if an error is thrown or not.
     </pre>
 </div>
