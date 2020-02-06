@@ -1,43 +1,45 @@
 //Darius Rain
-//File: index.js (Replace Callbacks with promises)
+//File: index.js async.
+const fetch = require('node-fetch');
 console.log("Before");
-
-getUserId(1, (id) => {
-    console.log('Userid', id)
-});
-
-getRepositories(1);
-
+//getUsers()
+//getPosts()
+getComments()
 console.log("After");
 
-//Old version
-// function getUserId(id, callback) {
-//     console.log('Fetching github user...')
-//     setTimeout(() =>
-//     {
-//         callback({userId: id, gitHubUserName: 'DariusRain'})
-//     }, 2000)
-// }
-
-//Converted version
-function getUserId(id) {
-  return new Promise((resolve, reject) => {
-    console.log("Fetching github user...");
-    setTimeout(() => {
-    resolve({ userId: id, gitHubUserName: "DariusRain" });
-    }, 2000);
-  }).then(reslut => console.log(reslut))
-  .catch(err => console.log(err))
+//NEW: async & await with try & catch 
+//Added dummy data to make it more realistic than before.
+async function getUsers() {
+ const fetchedData = await fetch('https://jsonplaceholder.typicode.com/users')
+ const data = await fetchedData.json()
+  try{
+    console.log(data)
+    }
+catch (err) {
+  console.log(err)
+}
 }
 
 //Again converted
-function getRepositories(id) {
-  return new Promise((resolve, reject) => {
-    console.log("Fetching repositories...");
-    setTimeout(() => {
-     resolve([1, 4, 2, 6]);
-    }, 2000);
-  })
-  .then(reslut => console.log(reslut))
-  .catch(err => console.log(err))
-}
+async function getPosts() {
+  const fetchedData = await fetch('https://jsonplaceholder.typicode.com/posts')
+  const data = await fetchedData.json()
+   try{
+     console.log(data)
+     }
+ catch (err) {
+   console.log(err)
+ }
+ }
+ 
+ async function getComments() {
+  const fetchedData = await fetch('https://jsonplaceholder.typicode.com/comments')
+  const data = await fetchedData.json()
+   try{
+     console.log(data)
+     }
+ catch (err) {
+   console.log(err)
+ }
+ }
+ //Try and catch is just another way of handling promises instead of using .then and catch you can use try & catch to reduce the amount of code blocks.
