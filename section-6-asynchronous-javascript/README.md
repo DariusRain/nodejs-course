@@ -97,7 +97,7 @@ Asynchrounous Javascript
         you can add the code in try and catch block rather than chaining '.then().then().catch()' you 
         can just write try {...} catch (err) {...}.
         The try block executes first in a try catch statement and executes the cathc block if a error occurs. 
-        Try and catch also comes with a finally syntax, all that does is execute the code within its block no matter
-        if an error is thrown or not.
+        Try and catch also comes with a finally syntax, all that does is execute the code within its block no 
+        matter if an error is thrown or not.
     </pre>
 </div>
