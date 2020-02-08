@@ -11,7 +11,7 @@
   <br>
   <h5>(✔) <a href="https://github.com/DariusRain/nodejs-course/tree/master/section-5-express-advanced-topics">Express Advanced Topics</a></h5>
   <br>
-  <h5>(✔) <a href="https://github.com/DariusRain/nodejs-restful-apis/tree/master/section-6-asynchronous-javascript"> Asynchronous Javascript</a> (Current) </h5>
+  <h5>(✔) <a href="https://github.com/DariusRain/nodejs-restful-apis/tree/master/section-6-asynchronous-javascript"> Asynchronous Javascript</a></h5>
   <h5>
 <br>
 <div align="center">
