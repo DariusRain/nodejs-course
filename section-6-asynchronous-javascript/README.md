@@ -126,11 +126,7 @@ Asynchrounous Javascript
     </pre>
 </div>
 <br>
-<<<<<<< HEAD
 <h3>7) <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await">async & await</a> with <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch">try & catch</a></h3>
-=======
-<h3>7)<a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await">async & await</a> with <a hrerf="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch">try & catch</a></h3>
->>>>>>> 6-7-async-await-try-catch-vid-9
 <div>
     <pre>
         Async and await are only necessary to use when an asynchronous task is happening, so try and catch can be used at any time.
