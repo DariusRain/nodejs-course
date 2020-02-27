@@ -82,10 +82,6 @@ Asynchrounous Javascript
 <h3>5) Converting Callbacks Into Promises.</h3>
 <div>
     <pre>
-<<<<<<< HEAD
-        Convert the callbacks (section 3).
-        See code <a href="https://github.com/DariusRain/nodejs-restful-apis/blob/6-5-replacing-callbacks-w-promises-vid-7/section-6-asynchronous-javascript/async-demo/index.js">branch:6-5@async-demo/index.js</a>
-=======
         Convert the code from '3)' into a promise.
         Example:  
         <code>
@@ -127,21 +123,40 @@ Asynchrounous Javascript
         Then if that promise gets resolved then next .then() statement will be executed otherwise it will execute .catch() of rejected.
         Note: You dont haft to nest .then() or .catch() statements becuase the promise will just continue to the next statement. 
         See code <a href="https://github.com/DariusRain/nodejs-restful-apis/blob/6-6-consuming-promises-vid-8/section-6-asynchronous-javascript/async-demo/index.js">branch:6-6@async-demo/index.js</a>
->>>>>>> 6-6-consuming-promises-vid-8
     </pre>
 </div>
 <br>
-<h3>6) <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await">async & await</a> with <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch">try & catch</a></h3>
+<h3>7)<a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await">async & await</a> with <a hrerf="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch">try & catch</a></h3>
 <div>
     <pre>
-        Async and await are only necessary to use when an asynchronous task is happening, so try and catch
-        can be used at any time.
-        Try and catch is handy to handle potential errors that may occur in the try block. It is similar
-        to .then and .catch but the diference is
-        you can add the code in try and catch block rather than chaining '.then().then().catch()' you 
-        can just write try {...} catch (err) {...}.
+        Async and await are only necessary to use when an asynchronous task is happening, so try and catch can be used at any time.
+        Try and catch is handy to handle potential errors that may occur in the try block. It is similar ti .then and .catch but the diference is
+        you can add the code in try and catch block rather than chaining '.then().then().catch()' you can just write try {...} catch (err) {...}.
         The try block executes first in a try catch statement and executes the cathc block if a error occurs. 
-        Try and catch also comes with a finally syntax, all that does is execute the code within its block no 
-        matter if an error is thrown or not.
+        Try and catch also comes with a finally syntax, all that does is execute the code within its block no matter if an error is thrown ir not.
+        <br>
+        Example: 
+            <code>
+            // Created a self executing function becuase i want the results ASAP.
+            // You can even assign this to a variable.
+                (async () => {
+                // In the try code block imagine it is trying all this code and if ANY result in a falsey value then
+                // the catch block will be executed. This is somewhat of an alternative to chaining .then() & .catch()
+                // but in some cases then .then() & .catch() are more suitable.
+                try {
+                    // It tries both promise returning functions.
+                    const gotUser = await getUser(3);
+                    const gotRepos = await getRepositories(gotUser.userId)
+                    console.log(gotUser)
+                    console.log(gotRepos)
+                    return gotRepos;
+                    } 
+                    catch(err) {
+                    // Executes this block if the above is false.
+                    return err;
+                }
+                })()
+            </code>
+        See code  <a href="https://github.com/DariusRain/nodejs-restful-apis/blob/6-7-async-await-try-catch-vid-9/section-6-asynchronous-javascript/async-demo/index.js">branch:6-7@async-demo/index.js</a>
     </pre>
 </div>
