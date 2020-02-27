@@ -1,0 +1,15 @@
+{
+  "name": "section-7-crud-ops-w-mongo-db",
+  "version": "1.0.0",
+  "description": "<p>\r Darius Rain <br>\r CRUD operations using <a href=\"https://www.mongodb.com/\">Mongoose Database</a> \r & npm <a href=\"https://www.npmjs.com/package/mongoose\">mongoose</a> package.\r </p>\r <hr>\r <br>\r <h3> 1) Connecting to MongoDB local or Atlas with npm <a href=\"https://www.npmjs.com/package/mongoose\">mongoose</a>.\r <div>\r     <pre>\r         Note: If you did'nt, Create a cluster with <a href=\"https://www.mongodb.com/cloud/atlas\">MongoDB Atlas</a> (Cloud) \r         or install <a href=\"https://www.mongodb.com/download-center/community\">MongoDB Community Server</a> (Local)\r         <br>\r          Install mongoose from npm:\r             Commands:\r                 npm i mongoose\r         <br>\r         Set enviroment variables with a Bash Script:\r             <br>\r             Note: You need to be using a Bash shell for the above script to work if you dont install <a href=\"https://git-scm.com/downloads\">Git Bash</a> for windows,\r                 if on MAC or linux it should work without GIt Bash.\r             <br>\r             Commands:\r                 - mkdir enviroment_scripts\r                 - nano enviroment_scripts/set_enviroment_development.sh\r                     <code>\r                         #!/bin/bash\r                         export DB=mongodb://localhost:27017/local_db (Or Atlas connection string)\r                         export NODE_ENV=development\r                         echo 'Set enviroment to development'        \r                     </code>\r                 - Ctrl + s\r                 - Ctrl + x\r                 - . enviroment_scripts/set_enviroment_development.sh\r                 Should see the message 'Set enviroment to development'\r                 <br>\r                 Note: Make sure to include the '.' before the path to the shell script.\r                 It Stands for the current directory, otherwise the enviroment wont be set \r                 at all.\r                 <br>\r                 Note: Do not include this in your commit to git, github or public source file.\r                     Solution is either add it to a '.gitignore' file \r                     or dont include it in your project's directory at all and execute it\r                     from a path elsewhere on your computer. \r                     Also the script only needs to be executed again if your computer did a complete reboot or shutdown.\r                 <br>\r         Now add the following to your server.js file  \r             <code>\r             const mongoose = require('mongoose');\r             const db = process.env.DB\r             const enviroment = process.env.NODE_ENV",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^5.9.2"
+  }
+}
