@@ -5,7 +5,7 @@ CRUD operations using <a href="https://www.mongodb.com/">Mongoose Database</a>
 </p>
 <hr>
 <br>
-<h3> 1) Connecting to MongoDB local or Atlas with npm <a href="https://www.npmjs.com/package/mongoose">mongoose</a>.
+<h3> 1) Connecting to MongoDB local or Atlas with npm <a href="https://www.npmjs.com/package/mongoose">mongoose</a></h3>.
 <div>
     <pre>
         Note: If you did'nt, Create a cluster with <a href="https://www.mongodb.com/cloud/atlas">MongoDB Atlas</a> (Cloud) 
