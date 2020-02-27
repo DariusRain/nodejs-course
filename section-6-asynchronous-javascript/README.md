@@ -82,8 +82,52 @@ Asynchrounous Javascript
 <h3>5) Converting Callbacks Into Promises.</h3>
 <div>
     <pre>
+<<<<<<< HEAD
         Convert the callbacks (section 3).
         See code <a href="https://github.com/DariusRain/nodejs-restful-apis/blob/6-5-replacing-callbacks-w-promises-vid-7/section-6-asynchronous-javascript/async-demo/index.js">branch:6-5@async-demo/index.js</a>
+=======
+        Convert the code from '3)' into a promise.
+        Example:  
+        <code>
+            function getUser(id) {
+            return new Promise((resolve, reject) => {
+                console.log("Fetching github user...");
+                setTimeout(() => {
+                resolve({ userId: id, gitHubUserName: "DariusRain" });
+                }, 2000);
+            }).then(reslut => console.log(reslut))
+            .catch(err => console.log(err))
+            }        
+        </code>
+        See code <a href="https://github.com/DariusRain/nodejs-restful-apis/blob/6-5-replacing-callbacks-w-promises-vid-7/section-6-asynchronous-javascript/async-demo/index.js">branch:6-5@async-demo/index.js</a>
+    </pre>
+</div>
+<h3>6) Consuming promises.</h3>
+<div>
+    <pre>
+        Chain .then & .catch statements to handle two promise returning functions.
+        Example:
+        <code>
+            getUser(2)
+                .then(result => {
+                    return result
+                })
+                .then(result => {
+                    getRepositories(result)
+                })
+                .then(result => {
+                    return result
+                })
+                .catch(err => {
+                    return err
+                })
+        </code>
+        The above example takes an id as an argument and returns the value of either resolve or reject from the 'getUser' function.
+        If it is reject() then it returns .catch() if not then it continues to the 'getRepositories' function which also returns a promise.
+        Then if that promise gets resolved then next .then() statement will be executed otherwise it will execute .catch() of rejected.
+        Note: You dont haft to nest .then() or .catch() statements becuase the promise will just continue to the next statement. 
+        See code <a href="https://github.com/DariusRain/nodejs-restful-apis/blob/6-6-consuming-promises-vid-8/section-6-asynchronous-javascript/async-demo/index.js">branch:6-6@async-demo/index.js</a>
+>>>>>>> 6-6-consuming-promises-vid-8
     </pre>
 </div>
 <br>
