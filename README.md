@@ -15,9 +15,9 @@
   <br>
   <h5>(✔) <a href="https://github.com/DariusRain/nodejs-course/tree/master/section-5-express-advanced-topics">Section 5</a>: Express Advanced Topics</h5>
   <br>
-  <h5>(📝) <a href="https://github.com/DariusRain/nodejs-restful-apis/tree/master/section-6-asynchronous-javascript">Section 6</a>: Asynchronous Javascript (Current) </h5>
+  <h5>(✔) <a href="https://github.com/DariusRain/nodejs-restful-apis/tree/master/section-6-asynchronous-javascript">Section 6</a>: Asynchronous Javascript (Current) </h5>
   <br>
-  <h5>(✖) <a href="#">Section 7</a>: CRUD Operations Using MongoDB </h5>
+  <h5>(📝) <a href="#">Section 7</a>: CRUD Operations Using MongoDB </h5>
   <br>
   <h5>(✖) <a href="#">Section 8</a>: Mongoose Data Validation </h5>
   <br>

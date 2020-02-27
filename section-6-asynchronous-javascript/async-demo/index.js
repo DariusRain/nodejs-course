@@ -1,26 +1,9 @@
 //Darius Rain
-//File: index.js (Replace Callbacks with promises)
+//File: index.js (Consuming Promises)
 console.log("Before");
 
-getUserId(1, (id) => {
-    console.log('Userid', id)
-});
-
-getRepositories(1);
-
-console.log("After");
-
-//Old version
-// function getUserId(id, callback) {
-//     console.log('Fetching github user...')
-//     setTimeout(() =>
-//     {
-//         callback({userId: id, gitHubUserName: 'DariusRain'})
-//     }, 2000)
-// }
-
 //Converted version
-function getUserId(id) {
+function getUser(id) {
   return new Promise((resolve, reject) => {
     console.log("Fetching github user...");
     setTimeout(() => {
@@ -41,3 +24,24 @@ function getRepositories(id) {
   .then(reslut => console.log(reslut))
   .catch(err => console.log(err))
 }
+
+
+
+// Consuming Promises
+
+// In this example you can see u used two promise returning functions 
+// You dont need to nest .then() statements it will automatically return the promise if there is one
+// - to the next .then() statement or .catch() if there is an error.
+getUser(2)
+  .then(result => {
+    return result
+  })
+  .then(result => {
+    getRepositories(result)
+  })
+  .then(result => {
+    return result
+  })
+  .catch(err => {
+    return err
+  })
