@@ -49,8 +49,11 @@ CRUD operations using <a href="https://www.mongodb.com/">Mongoose Database</a>
             const mongoose = require('mongoose');
             const db = process.env.DB
             const enviroment = process.env.NODE_ENV
-
-            mongoose.connection(db, {useNewUrlParser: true, useUnifiedTopology: true}, () => {console.log('Connected to database')})
+            mongoose.connection(
+            db, 
+            {useNewUrlParser: true, useUnifiedTopology: true}, 
+            () => {console.log('Connected to database')}
+            )
             </code>
     </pre>
 </div>
