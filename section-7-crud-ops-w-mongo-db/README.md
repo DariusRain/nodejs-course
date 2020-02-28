@@ -18,7 +18,7 @@ CRUD operations using <a href="https://www.mongodb.com/">Mongoose Database</a>
         Set enviroment variables with a Bash Script:
             <br>
             Note: You need to be using a Bash shell for the above script to work if you dont install <a href="https://git-scm.com/downloads">Git Bash</a> for windows,
-                if on MAC or linux it should work without GIt Bash.
+                if on MAC or linux it should work without Git Bash.
             <br>
             Commands:
                 - mkdir enviroment_scripts
@@ -42,7 +42,8 @@ CRUD operations using <a href="https://www.mongodb.com/">Mongoose Database</a>
                     Solution is either add it to a '.gitignore' file 
                     or dont include it in your project's directory at all and execute it
                     from a path elsewhere on your computer. 
-                    Also the script only needs to be executed again if your computer did a complete reboot or shutdown.
+                    Also the script only needs to be executed again if your computer did a 
+                    complete reboot or shutdown.
                 <br>
         Now add the following to your server.js file  
             <code>
