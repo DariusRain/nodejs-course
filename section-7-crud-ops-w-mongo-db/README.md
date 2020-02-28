@@ -17,8 +17,8 @@ CRUD operations using <a href="https://www.mongodb.com/">Mongoose Database</a>
         <br>
         Set enviroment variables with a Bash Script:
             <br>
-            Note: You need to be using a Bash shell for the above script to work if you dont install <a href="https://git-scm.com/downloads">Git Bash</a> for windows,
-                if on MAC or linux it should work without Git Bash.
+            Note: You need to be using a Bash shell for the above script to work if you dont install <a href="https://git-scm.com/downloads">Git Bash</a> 
+            for windows, if on MAC or linux it should work without Git Bash.
             <br>
             Commands:
                 - mkdir enviroment_scripts
